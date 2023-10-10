@@ -284,14 +284,14 @@ via group membership - you'll set that up later.
 
 2.  Select the **Assignments** tab.
 ![alt_text](https://raw.githubusercontent.com/MarcoBlaesing/LabGuide/main/images/009/image021.png "image_tooltip")
-3.  Click the **Assign** button and select **Assign to People** from the
-![alt_text](https://raw.githubusercontent.com/MarcoBlaesing/LabGuide/main/images/009/image022.png "image_tooltip")
-![alt_text](https://raw.githubusercontent.com/MarcoBlaesing/LabGuide/main/images/009/image023.png "image_tooltip")
-![alt_text](https://raw.githubusercontent.com/MarcoBlaesing/LabGuide/main/images/009/image024.png "image_tooltip")
+3.  Click the **Assign** button and select **Assign to People** from the **Assignments** tab
+
+
+
 
 4.  Select your admin user and click **Assign**.
+![alt_text](https://raw.githubusercontent.com/MarcoBlaesing/LabGuide/main/images/009/image022.png "image_tooltip")
 
-![alt_text](https://raw.githubusercontent.com/MarcoBlaesing/LabGuide/main/images/009/image025.png "image_tooltip")
 >
 > The User Name has been set based on the custom expression you
 > specified during configuration of single sign-on.
@@ -303,10 +303,19 @@ via group membership - you'll set that up later.
 >
 > Licenses have been set based on the attribute mapping you created.
 >
-![alt_text](https://raw.githubusercontent.com/MarcoBlaesing/LabGuide/main/images/009/image026.png "image_tooltip")
+![alt_text](https://raw.githubusercontent.com/MarcoBlaesing/LabGuide/main/images/009/image023.png "image_tooltip")
+
+
 
 5.  Scroll down to the *roles* and select the **Global Administrator**
 
+
+
+
+
+![alt_text](https://raw.githubusercontent.com/MarcoBlaesing/LabGuide/main/images/009/image024.png "image_tooltip")
+![alt_text](https://raw.githubusercontent.com/MarcoBlaesing/LabGuide/main/images/009/image025.png "image_tooltip")
+![alt_text](https://raw.githubusercontent.com/MarcoBlaesing/LabGuide/main/images/009/image026.png "image_tooltip")
 ![alt_text](https://raw.githubusercontent.com/MarcoBlaesing/LabGuide/main/images/009/image027.png "image_tooltip")
 
 6.  Scroll to the bottom and click **Save and Go Back**.
