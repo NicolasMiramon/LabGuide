@@ -400,14 +400,10 @@ group definition.
 
 1.  If not already there, navigate to **Directory \> Groups**.
 
-
-
 ![alt_text](https://raw.githubusercontent.com/MarcoBlaesing/LabGuide/main/images/009/image034.png "image_tooltip")
-![alt_text](https://raw.githubusercontent.com/MarcoBlaesing/LabGuide/main/images/009/image035.png "image_tooltip")
 
 2.  Click on the link for the **O365Users** group.
-
-![alt_text](https://raw.githubusercontent.com/MarcoBlaesing/LabGuide/main/images/009/image040.png "image_tooltip")
+![alt_text](https://raw.githubusercontent.com/MarcoBlaesing/LabGuide/main/images/009/image035.png "image_tooltip")
 
 3.  Select the **Applications** tab in the group properties.
 
@@ -417,9 +413,7 @@ group definition.
 
 5.  Click the **Assign** button next to the *Microsoft Office 365*
 
-
 ![alt_text](https://raw.githubusercontent.com/MarcoBlaesing/LabGuide/main/images/009/image038.png "image_tooltip")
-
 
 6.  Scroll to the bottom of the page and click **Save and Go Back**.
 
@@ -432,7 +426,7 @@ group definition.
 You will now assign a test user to the *O365Users* group. This will
 cause the user to be assigned the Microsoft Office 365 application
 which, in turn, will trigger provisioning of an account.
-
+![alt_text](https://raw.githubusercontent.com/MarcoBlaesing/LabGuide/main/images/009/image040.png "image_tooltip")
 1.  If not already there, navigate to **Directory \> Groups**.
 
 ![alt_text](https://raw.githubusercontent.com/MarcoBlaesing/LabGuide/main/images/009/image041.png "image_tooltip")
