@@ -378,15 +378,16 @@ Office 365 application.
 1.  In the administration UI for your Okta org, navigate to **Directory \> Groups**.
 ![alt_text](https://raw.githubusercontent.com/MarcoBlaesing/LabGuide/main/images/009/image032.png "image_tooltip")
 2.  Click the **Add group** button.
-![alt_text](https://raw.githubusercontent.com/MarcoBlaesing/LabGuide/main/images/009/image033.png "image_tooltip")
+
 
 
 3.  Enter **O365Users** as the Name of the group.
-![alt_text](https://raw.githubusercontent.com/MarcoBlaesing/LabGuide/main/images/009/image034.png "image_tooltip")
-4.  Enter **Office 365 Users** as the Description.
-![alt_text](https://raw.githubusercontent.com/MarcoBlaesing/LabGuide/main/images/009/image035.png "image_tooltip")
-5.  Click **Save**.
 
+
+4.  Enter **Office 365 Users** as the Description.
+
+5.  Click **Save**.
+![alt_text](https://raw.githubusercontent.com/MarcoBlaesing/LabGuide/main/images/009/image033.png "image_tooltip")
 
 
 
@@ -399,7 +400,10 @@ group definition.
 
 1.  If not already there, navigate to **Directory \> Groups**.
 
+
+
 ![alt_text](https://raw.githubusercontent.com/MarcoBlaesing/LabGuide/main/images/009/image034.png "image_tooltip")
+![alt_text](https://raw.githubusercontent.com/MarcoBlaesing/LabGuide/main/images/009/image035.png "image_tooltip")
 
 2.  Click on the link for the **O365Users** group.
 
