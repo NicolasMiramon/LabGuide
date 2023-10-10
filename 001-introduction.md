@@ -38,7 +38,7 @@ The credentials and token for the target applications will be supplied to you wh
 
 At the end of the lab, the accounts will be automatically decommissioned. Only the Okta tenant generated for this event will remain active for your use.
 
-To ensure that the lab works properly, you will need to install Okta Verify on one of your devices.
+**To ensure that the lab works properly and to access to Okta tenant, you will need to install Okta Verify on one of your devices.**
 
 
 
