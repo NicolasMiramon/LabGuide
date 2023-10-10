@@ -231,7 +231,7 @@ _These are the values you need to configure in Okta.
 
 Single sign-on is now configured.  The next step is to configure provisioning.
 
-
+[//]: <> (Section to be hiden in this label. All credentials will be provided to users)
 ## Configure provisioning
 
 The single sign-on configuration performed in the previous section allows your Okta org to assert identity information to your Salesforce tenant and it allows your Salesforce tenant to trust it.  However that’s not enough for single sign-on to complete.  Each identity asserted by Okta must link to an existing account in Salesforce..
