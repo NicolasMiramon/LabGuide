@@ -280,14 +280,11 @@ For this test you will directly assign your Okta admin user to the
 Office 365 application. You'll notice that it's also possible to assign
 via group membership - you'll set that up later.
 
-1.  If not already there, navigate to **Applications \> Applications**
+1.  If not already there, navigate to **Applications \> Microsoft Office 365**
 
 2.  Select the **Assignments** tab.
 ![alt_text](https://raw.githubusercontent.com/MarcoBlaesing/LabGuide/main/images/009/image021.png "image_tooltip")
 3.  Click the **Assign** button and select **Assign to People** from the **Assignments** tab
-
-
-
 
 4.  Select your admin user and click **Assign**.
 ![alt_text](https://raw.githubusercontent.com/MarcoBlaesing/LabGuide/main/images/009/image022.png "image_tooltip")
@@ -300,45 +297,39 @@ via group membership - you'll set that up later.
 > was AD sourced and already had an immutable ID synced from Azure AD
 > via Microsoft AD Connect or similar. In this case, the immutable ID
 > will be populated during provisioning to Azure AD.
->
+>![alt_text](https://raw.githubusercontent.com/MarcoBlaesing/LabGuide/main/images/009/image023.png "image_tooltip")
 > Licenses have been set based on the attribute mapping you created.
 >
-![alt_text](https://raw.githubusercontent.com/MarcoBlaesing/LabGuide/main/images/009/image023.png "image_tooltip")
-
-
 
 5.  Scroll down to the *roles* and select the **Global Administrator**
 
-
-
-
-
 ![alt_text](https://raw.githubusercontent.com/MarcoBlaesing/LabGuide/main/images/009/image024.png "image_tooltip")
-![alt_text](https://raw.githubusercontent.com/MarcoBlaesing/LabGuide/main/images/009/image025.png "image_tooltip")
-![alt_text](https://raw.githubusercontent.com/MarcoBlaesing/LabGuide/main/images/009/image026.png "image_tooltip")
-![alt_text](https://raw.githubusercontent.com/MarcoBlaesing/LabGuide/main/images/009/image027.png "image_tooltip")
+
 
 6.  Scroll to the bottom and click **Save and Go Back**.
+![alt_text](https://raw.githubusercontent.com/MarcoBlaesing/LabGuide/main/images/009/image025.png "image_tooltip")
 
-![alt_text](https://raw.githubusercontent.com/MarcoBlaesing/LabGuide/main/images/009/image028.png "image_tooltip")
 
 7.  Click **Done**.
+![alt_text](https://raw.githubusercontent.com/MarcoBlaesing/LabGuide/main/images/009/image026.png "image_tooltip")
 
-![alt_text](https://raw.githubusercontent.com/MarcoBlaesing/LabGuide/main/images/009/image029.png "image_tooltip")
 >
 > In the background, Okta is now attempting to create this user in your
 > Microsoft 365 tenant and assign the selected roles licenses. This
 > should only take a few seconds to complete.
 >
-![alt_text](https://raw.githubusercontent.com/MarcoBlaesing/LabGuide/main/images/009/image030.png "image_tooltip")
-
+![alt_text](https://raw.githubusercontent.com/MarcoBlaesing/LabGuide/main/images/009/image027.png "image_tooltip")
 8.  In the Okta Admin UI, navigate to **Reports \> System Log**.
+![alt_text](https://raw.githubusercontent.com/MarcoBlaesing/LabGuide/main/images/009/image028.png "image_tooltip")
+9.  Confirm that the records indicating successful provisioning are found.
+![alt_text](https://raw.githubusercontent.com/MarcoBlaesing/LabGuide/main/images/009/image029.png "image_tooltip")
 
-9.  Confirm that the records indicating successful provisioning are
-    > found.
+
+
+
 
 ## Test single sign-on (SSO)
-
+![alt_text](https://raw.githubusercontent.com/MarcoBlaesing/LabGuide/main/images/009/image030.png "image_tooltip")
 You can now test single sign-on to Microsoft 365 for the assigned user.
 
 1.  Open a new browser window that is not signed into Okta or Microsoft
