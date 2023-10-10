@@ -1,5 +1,5 @@
 # LEARNING OBJECTIVES
-Today we are going to learn the following topics:
+Today we are going to learn the following topics: 
 
 - How to integrate Okta with SAP SuccessFactors (HR as a Source)
 - How to integrate Salesforce and Office 365 with Okta
