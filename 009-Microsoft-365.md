@@ -168,13 +168,9 @@ the steps below to grant this access and enable integration:
 
 7.  Click **Save**.
 
-![alt_text](https://raw.githubusercontent.com/MarcoBlaesing/LabGuide/main/images/009/image013.png "image_tooltip")
-
 The API connection for provisioning is now in place. Provisioning
 configuration is now shown under the Provisioning tab. The integration
 configuration you just created is under the Integration tab.
-
-There are two provisioning directions supported by this integration:
 
 ## Enable provisioning to app
 
