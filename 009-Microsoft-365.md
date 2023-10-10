@@ -322,14 +322,14 @@ via group membership - you'll set that up later.
 8.  In the Okta Admin UI, navigate to **Reports \> System Log**.
 ![alt_text](https://raw.githubusercontent.com/MarcoBlaesing/LabGuide/main/images/009/image028.png "image_tooltip")
 9.  Confirm that the records indicating successful provisioning are found.
-![alt_text](https://raw.githubusercontent.com/MarcoBlaesing/LabGuide/main/images/009/image029.png "image_tooltip")
+
 
 
 
 
 
 ## Test single sign-on (SSO)
-![alt_text](https://raw.githubusercontent.com/MarcoBlaesing/LabGuide/main/images/009/image030.png "image_tooltip")
+
 You can now test single sign-on to Microsoft 365 for the assigned user.
 
 1.  Open a new browser window that is not signed into Okta or Microsoft
@@ -338,20 +338,23 @@ You can now test single sign-on to Microsoft 365 for the assigned user.
 
 3.  Authenticate as your test user: e.g. ***your.name*\@okta.com**\
 
-![alt_text](https://raw.githubusercontent.com/MarcoBlaesing/LabGuide/main/images/009/image031.png "image_tooltip")
+
 
 4.  Click the tile for **Microsoft Office 365 Office Portal**.
 
-![alt_text](https://raw.githubusercontent.com/MarcoBlaesing/LabGuide/main/images/009/image032.png "image_tooltip")
+![alt_text](https://raw.githubusercontent.com/MarcoBlaesing/LabGuide/main/images/009/image029.png "image_tooltip")
+
+
 
 5.  Click **Yes** to stay signed in.
+![alt_text](https://raw.githubusercontent.com/MarcoBlaesing/LabGuide/main/images/009/image030.png "image_tooltip")
 
-![alt_text](https://raw.githubusercontent.com/MarcoBlaesing/LabGuide/main/images/009/image033.png "image_tooltip")
+
 
 6.  Click the identity icon in the top-right of the page.
 
 7.  Click **Sign out** to clear the session. Close the browser you used
-
+![alt_text](https://raw.githubusercontent.com/MarcoBlaesing/LabGuide/main/images/009/image031.png "image_tooltip")
 
 # Configure group assignment
 
@@ -372,19 +375,16 @@ applied instead.
 You will now create a group that will be assigned to the Microsoft
 Office 365 application.
 
-![alt_text](https://raw.githubusercontent.com/MarcoBlaesing/LabGuide/main/images/009/image034.png "image_tooltip")
-
-1.  In the administration UI for your Okta org, navigate to **Directory
-    > \> Groups**.
-
+1.  In the administration UI for your Okta org, navigate to **Directory \> Groups**.
+![alt_text](https://raw.githubusercontent.com/MarcoBlaesing/LabGuide/main/images/009/image032.png "image_tooltip")
 2.  Click the **Add group** button.
+![alt_text](https://raw.githubusercontent.com/MarcoBlaesing/LabGuide/main/images/009/image033.png "image_tooltip")
 
-![alt_text](https://raw.githubusercontent.com/MarcoBlaesing/LabGuide/main/images/009/image035.png "image_tooltip")
 
 3.  Enter **O365Users** as the Name of the group.
-
+![alt_text](https://raw.githubusercontent.com/MarcoBlaesing/LabGuide/main/images/009/image034.png "image_tooltip")
 4.  Enter **Office 365 Users** as the Description.
-
+![alt_text](https://raw.githubusercontent.com/MarcoBlaesing/LabGuide/main/images/009/image035.png "image_tooltip")
 5.  Click **Save**.
 
 
