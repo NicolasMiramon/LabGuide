@@ -2,7 +2,6 @@
 Today we are going to learn the following topics:
 
 - How to integrate Okta with SAP SuccessFactors (HR as a Source)
- <!-- - How to integrate Active Directory with Okta) -->
 - How to integrate Salesforce and Office 365 with Okta
 - How to automatically on and offboard employees
 - How to customize complex identity requirements with Okta Workflows
@@ -15,7 +14,6 @@ This workshop is broken into the sections listed below.
 - Platform Review and Preparation
 
 - IDENTITY SOURCES
-     <!--- Integrate Active Directory) -->
     - Integrate SAP Successfactors
 
 - INTEGRATING APPLICATIONS for secure Single-Sign-On and Lifecycle management
