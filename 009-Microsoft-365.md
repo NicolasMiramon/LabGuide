@@ -256,7 +256,7 @@ Follow these steps:
     -   Exchange Online (Plan 2)
 
 >
-![alt_text](https://raw.githubusercontent.com/MarcoBlaesing/LabGuide/main/images/009/image022.png "image_tooltip")
+
 
 6.  Scroll to the bottom of the window and click **Save**.
 ![alt_text](https://raw.githubusercontent.com/MarcoBlaesing/LabGuide/main/images/009/image020.png "image_tooltip")
@@ -282,16 +282,14 @@ via group membership - you'll set that up later.
 
 1.  If not already there, navigate to **Applications \> Applications**
 
-![alt_text](https://raw.githubusercontent.com/MarcoBlaesing/LabGuide/main/images/009/image023.png "image_tooltip")
-
 2.  Select the **Assignments** tab.
-
-3.  Click the **Assign** button and select **Assign to People** from the
 ![alt_text](https://raw.githubusercontent.com/MarcoBlaesing/LabGuide/main/images/009/image021.png "image_tooltip")
-
+3.  Click the **Assign** button and select **Assign to People** from the
+![alt_text](https://raw.githubusercontent.com/MarcoBlaesing/LabGuide/main/images/009/image022.png "image_tooltip")
+![alt_text](https://raw.githubusercontent.com/MarcoBlaesing/LabGuide/main/images/009/image023.png "image_tooltip")
 ![alt_text](https://raw.githubusercontent.com/MarcoBlaesing/LabGuide/main/images/009/image024.png "image_tooltip")
 
-5.  Select your admin user and click **Assign**.
+4.  Select your admin user and click **Assign**.
 
 ![alt_text](https://raw.githubusercontent.com/MarcoBlaesing/LabGuide/main/images/009/image025.png "image_tooltip")
 >
