@@ -212,9 +212,9 @@ Follow these steps:
 
 
 1.  If not already there, open the **To App** settings under the **Provisioning** tab.
+![alt_text](https://raw.githubusercontent.com/MarcoBlaesing/LabGuide/main/images/009/image015.png "image_tooltip")
 
 
-![alt_text](https://raw.githubusercontent.com/MarcoBlaesing/LabGuide/main/images/009/image017.png "image_tooltip")
 
 2.  Scroll to the bottom of the page and click **Show Unmapped
 ![alt_text](https://raw.githubusercontent.com/MarcoBlaesing/LabGuide/main/images/009/image016.png "image_tooltip")
@@ -227,16 +227,14 @@ Follow these steps:
 
 
 4.  Select **Same value for all users** from the drop-down list.\
-![alt_text](https://raw.githubusercontent.com/MarcoBlaesing/LabGuide/main/images/009/image015.png "image_tooltip")
+![alt_text](https://raw.githubusercontent.com/MarcoBlaesing/LabGuide/main/images/009/image017.png "image_tooltip")
+
 
     > The available options are shown. These have been pulled via API
     > and so reflect the options relevant for your Microsoft tenant:
 ![alt_text](https://raw.githubusercontent.com/MarcoBlaesing/LabGuide/main/images/009/image018.png "image_tooltip")
-![alt_text](https://raw.githubusercontent.com/MarcoBlaesing/LabGuide/main/images/009/image019.png "image_tooltip")
 
-![alt_text](https://raw.githubusercontent.com/MarcoBlaesing/LabGuide/main/images/009/image020.png "image_tooltip")
->
-![alt_text](https://raw.githubusercontent.com/MarcoBlaesing/LabGuide/main/images/009/image021.png "image_tooltip")
+
 
 5.  Select the checkboxes for the following licenses:
 
@@ -253,18 +251,15 @@ Follow these steps:
     -   Office 365 ProPlus
 
     -   Exchange Online Advanced Threat Protection
-
--   Microsoft Teams
-
--   Intune
-
--   Exchange Online (Plan 2)
+    -   Microsoft Teams
+    -   Intune
+    -   Exchange Online (Plan 2)
 
 >
 ![alt_text](https://raw.githubusercontent.com/MarcoBlaesing/LabGuide/main/images/009/image022.png "image_tooltip")
 
 6.  Scroll to the bottom of the window and click **Save**.
-
+![alt_text](https://raw.githubusercontent.com/MarcoBlaesing/LabGuide/main/images/009/image020.png "image_tooltip")
 OK. Provisioning is enabled and attribute mapping is done. You're ready
 to test.
 
@@ -292,10 +287,11 @@ via group membership - you'll set that up later.
 2.  Select the **Assignments** tab.
 
 3.  Click the **Assign** button and select **Assign to People** from the
+![alt_text](https://raw.githubusercontent.com/MarcoBlaesing/LabGuide/main/images/009/image021.png "image_tooltip")
 
 ![alt_text](https://raw.githubusercontent.com/MarcoBlaesing/LabGuide/main/images/009/image024.png "image_tooltip")
 
-4.  Select your admin user and click **Assign**.
+5.  Select your admin user and click **Assign**.
 
 ![alt_text](https://raw.githubusercontent.com/MarcoBlaesing/LabGuide/main/images/009/image025.png "image_tooltip")
 >
