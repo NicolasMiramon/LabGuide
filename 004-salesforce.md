@@ -245,7 +245,7 @@ You’ll also run a one-time import and link your Okta admin user with your Sale
 
 To make the lab run smoothly, all the Salesforce configuration tasks involved in declaring a new application have been generated in advance.
 
-**Consumer Key and Consumer Secret information has been sent to you.** 
+**Consumer Key and Consumer Secret informations have been sent to you.** 
 
 ### Configure provisioning in Okta
 
