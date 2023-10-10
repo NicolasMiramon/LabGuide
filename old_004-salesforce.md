@@ -243,11 +243,98 @@ You’ll also run a one-time import and link your Okta admin user with your Sale
 
 ### Create a Connected App in Salesforce
 
-To make the lab run smoothly, all the Salesforce configuration tasks involved in declaring a new application have been generated in advance.
+The Salesforce user management APIs are protected by OAuth 2.0.  Your Okta org will act as an OAuth 2.0 client and will request delegated access to the required Salesforce APIs from your Salesforce administrator.
 
-**Consumer Key and Consumer Secret information has been sent to you.** 
+You will now create a Connected App definition in Salesforce to represent your Okta org.
+
+
+
+1. If not already there, login to your Salesforce tenant using your administrator account.
+
+
+![alt_text](https://raw.githubusercontent.com/MarcoBlaesing/LabGuide/main/images/004/image22.png "image_tooltip")
+
+
+2. Navigate to **Apps > App Manager**.
+3. Click **New Connected App**.
+
+
+![alt_text](https://raw.githubusercontent.com/MarcoBlaesing/LabGuide/main/images/004/image23.png "image_tooltip")
+
+
+4. Enter a _Connected App Name_. E.g. **Okta Provisioning**. \
+The _API Name_ is auto-completed based on the app name.
+5. Enter a contact email.
+
+
+![alt_text](https://raw.githubusercontent.com/MarcoBlaesing/LabGuide/main/images/004/image24.png "image_tooltip")
+
+
+6. Check the checkbox to _Enable OAuth Settings_.
+7. Enter **https://system-admin.okta.com/admin/app/generic/oauth20redirect **in the _Callback URL_ text box.
+
+
+![alt_text](https://raw.githubusercontent.com/MarcoBlaesing/LabGuide/main/images/004/image25.png "image_tooltip")
+
+
+8. In _Selected OAuth Scopes, _select the following scopes:
+    * **Access unique user identifiers (openid)**
+    * **Manage user data via APIs (api)**
+    * **Perform requests at any time (refresh_token, offline_access)**
+9. Scroll to the bottom of the page and click **Save**.
+
+
+![alt_text](https://raw.githubusercontent.com/MarcoBlaesing/LabGuide/main/images/004/image26.png "image_tooltip")
+
+
+
+    As you can see here, you may need to wait 10 minutes before your new client definition can be used.  It usually works a lot sooner than that though.
+
+10. Click **Continue**.
+
+    You are taken to the list of apps.
+
+
+
+### Retrieve application ID and Secret
+
+Now that the Connect App has been defined, you need to retrieve the application ID and secret that will allow your Okta org to authenticate as that app.
+
+
+
+1. If not already there, navigate to **Apps > App Manager** in your Salesforce admin UI.
+
+
+![alt_text](https://raw.githubusercontent.com/MarcoBlaesing/LabGuide/main/images/004/image27.png "image_tooltip")
+
+
+2. Locate the table entry for your Connected App and click the **Arrow icon**.
+3. Select **View** from the drop-down menu.
+
+
+![alt_text](https://raw.githubusercontent.com/MarcoBlaesing/LabGuide/main/images/004/image28.png "image_tooltip")
+
+
+4. Click **Manage Consumer Details**.
+
+    Viewing the consumer details is a sensitive action.  You must perform a step-up authentication before you can access them.  A one-time password is sent to the email address you registered when setting up your Salesforce admin account.  A challenge page is displayed:
+
+
+![alt_text](https://raw.githubusercontent.com/MarcoBlaesing/LabGuide/main/images/004/image29.png "image_tooltip")
+
+
+5. Retrieve the OTP from your email and enter it on the challenge form.
+6. Click **Verify**.
+
+
+![alt_text](https://raw.githubusercontent.com/MarcoBlaesing/LabGuide/main/images/004/image30.png "image_tooltip")
+
+
+7. You now have access to the _Consumer Key _and _Consumer Secret _that you will need when configuring Okta.  Leave this browser tab open.
+
 
 ### Configure provisioning in Okta
+
 
 
 1. If you are not already there, open your Okta administration UI, navigate to **Applications > Applications**, and select the **Salesforce.com **application definition.
