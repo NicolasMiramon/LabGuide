@@ -403,48 +403,49 @@ group definition.
 ![alt_text](https://raw.githubusercontent.com/MarcoBlaesing/LabGuide/main/images/009/image034.png "image_tooltip")
 
 2.  Click on the link for the **O365Users** group.
-![alt_text](https://raw.githubusercontent.com/MarcoBlaesing/LabGuide/main/images/009/image035.png "image_tooltip")
+
 
 3.  Select the **Applications** tab in the group properties.
 
 4.  Click **Assign applications**.
+![alt_text](https://raw.githubusercontent.com/MarcoBlaesing/LabGuide/main/images/009/image035.png "image_tooltip")
 
-![alt_text](https://raw.githubusercontent.com/MarcoBlaesing/LabGuide/main/images/009/image036.png "image_tooltip")
 
 5.  Click the **Assign** button next to the *Microsoft Office 365*
+![alt_text](https://raw.githubusercontent.com/MarcoBlaesing/LabGuide/main/images/009/image036.png "image_tooltip")
 
-![alt_text](https://raw.githubusercontent.com/MarcoBlaesing/LabGuide/main/images/009/image038.png "image_tooltip")
 
 6.  Scroll to the bottom of the page and click **Save and Go Back**.
+![alt_text](https://raw.githubusercontent.com/MarcoBlaesing/LabGuide/main/images/009/image038.png "image_tooltip")
 
-![alt_text](https://raw.githubusercontent.com/MarcoBlaesing/LabGuide/main/images/009/image039.png "image_tooltip")
 
 7.  Click **Done**.
-
+![alt_text](https://raw.githubusercontent.com/MarcoBlaesing/LabGuide/main/images/009/image039.png "image_tooltip")
 ## Assign user to group
 
 You will now assign a test user to the *O365Users* group. This will
 cause the user to be assigned the Microsoft Office 365 application
 which, in turn, will trigger provisioning of an account.
-![alt_text](https://raw.githubusercontent.com/MarcoBlaesing/LabGuide/main/images/009/image040.png "image_tooltip")
+
 1.  If not already there, navigate to **Directory \> Groups**.
 
-![alt_text](https://raw.githubusercontent.com/MarcoBlaesing/LabGuide/main/images/009/image041.png "image_tooltip")
+
 
 2.  Select the **People** tab.
-
+![alt_text](https://raw.githubusercontent.com/MarcoBlaesing/LabGuide/main/images/009/image040.png "image_tooltip")
 3.  Click **Assign people**.
 
-![alt_text](https://raw.githubusercontent.com/MarcoBlaesing/LabGuide/main/images/009/image042.png "image_tooltip")
+
 
 4.  Click the **+ icon** for a test user in your Okta org.\
+![alt_text](https://raw.githubusercontent.com/MarcoBlaesing/LabGuide/main/images/009/image041.png "image_tooltip")
 
-![alt_text](https://raw.githubusercontent.com/MarcoBlaesing/LabGuide/main/images/009/image043.png "image_tooltip")
+
 
 The user is now assigned to the group and will be assigned to the
 Microsoft Office 365 application using the attribute mapping associated
 with the group assignment.
-
+![alt_text](https://raw.githubusercontent.com/MarcoBlaesing/LabGuide/main/images/009/image042.png "image_tooltip")
 ## Test single sign-on
 
 You can now test single sign-on to Microsoft 365 for your test user.
@@ -456,18 +457,19 @@ You can now test single sign-on to Microsoft 365 for your test user.
 3.  Authenticate as your test user: e.g.
     > ***alex.anderson@yourdemodomain.com***\
 
-![alt_text](https://raw.githubusercontent.com/MarcoBlaesing/LabGuide/main/images/009/image044.png "image_tooltip")
+
 
 4.  Click the tile for **Microsoft Office 365 Word Online**.
+  ![alt_text](https://raw.githubusercontent.com/MarcoBlaesing/LabGuide/main/images/009/image043.png "image_tooltip")
 
-![alt_text](https://raw.githubusercontent.com/MarcoBlaesing/LabGuide/main/images/009/image045.png "image_tooltip")
+
 
 5.  Click **Yes** to stay signed in.
-
+![alt_text](https://raw.githubusercontent.com/MarcoBlaesing/LabGuide/main/images/009/image044.png "image_tooltip")
 6.  Click the identity icon in the top-right of the page.
 
 7.  Click **Sign out** to clear the session. Close the browser you used
-
+![alt_text](https://raw.githubusercontent.com/MarcoBlaesing/LabGuide/main/images/009/image045.png "image_tooltip")
 Congratulations! You have successfully configured Lifecycle Management
 and Single Sign-On to Microsoft Office 365. Your demo environment can
 now be used to demonstrate these capabilities to customers.
