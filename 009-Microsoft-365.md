@@ -209,26 +209,30 @@ For Microsoft 365, the licenses and roles to be assigned to users can be
 set up in attribute mapping. This is what you will configure here.
 Follow these steps:
 
-![alt_text](https://raw.githubusercontent.com/MarcoBlaesing/LabGuide/main/images/009/image016.png "image_tooltip")
 
-1.  If not already there, open the **To App** settings under the
+
+1.  If not already there, open the **To App** settings under the **Provisioning** tab.
 
 
 ![alt_text](https://raw.githubusercontent.com/MarcoBlaesing/LabGuide/main/images/009/image017.png "image_tooltip")
 
 2.  Scroll to the bottom of the page and click **Show Unmapped
+![alt_text](https://raw.githubusercontent.com/MarcoBlaesing/LabGuide/main/images/009/image016.png "image_tooltip")
 
 
-![alt_text](https://raw.githubusercontent.com/MarcoBlaesing/LabGuide/main/images/009/image018.png "image_tooltip")
 
 3.  Click the **Edit** icon for the *Licenses* attribute.
 
-![alt_text](https://raw.githubusercontent.com/MarcoBlaesing/LabGuide/main/images/009/image019.png "image_tooltip")
+
 
 
 4.  Select **Same value for all users** from the drop-down list.\
+![alt_text](https://raw.githubusercontent.com/MarcoBlaesing/LabGuide/main/images/009/image015.png "image_tooltip")
+
     > The available options are shown. These have been pulled via API
     > and so reflect the options relevant for your Microsoft tenant:
+![alt_text](https://raw.githubusercontent.com/MarcoBlaesing/LabGuide/main/images/009/image018.png "image_tooltip")
+![alt_text](https://raw.githubusercontent.com/MarcoBlaesing/LabGuide/main/images/009/image019.png "image_tooltip")
 
 ![alt_text](https://raw.githubusercontent.com/MarcoBlaesing/LabGuide/main/images/009/image020.png "image_tooltip")
 >
