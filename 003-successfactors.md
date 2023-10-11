@@ -15,21 +15,21 @@ these steps:
 
 2.  Navigate to **Applications \> Applications**.
 
-![alt_text](https://raw.githubusercontent.com/MarcoBlaesing/LabGuide/main/images/009/image01.png "image_tooltip")
+![alt_text](https://raw.githubusercontent.com/NicolasMiramon/LabGuide/main/images/009/image01.png "image_tooltip")
 
 3.  Click **Browse App Catalog** to open the Okta Integration Network
 
 4. **Search** the Okta Integration Network for SAP Success Factors
    
-![alt_text](https://raw.githubusercontent.com/MarcoBlaesing/LabGuide/main/images/010/image00.png "image_tooltip")
+![alt_text](https://raw.githubusercontent.com/NicolasMiramon/LabGuide/main/images/010/image00.png "image_tooltip")
 
 5. Select to **add the integration**
 
-![alt_text](https://raw.githubusercontent.com/MarcoBlaesing/LabGuide/main/images/010/image05.png "image_tooltip")
+![alt_text](https://raw.githubusercontent.com/NicolasMiramon/LabGuide/main/images/010/image05.png "image_tooltip")
 
 6. In the **General tab** complete the required fields using the information below
 
-   ![alt_text](https://raw.githubusercontent.com/MarcoBlaesing/LabGuide/main/images/010/image06.png "image_tooltip")
+   ![alt_text](https://raw.githubusercontent.com/NicolasMiramon/LabGuide/main/images/010/image06.png "image_tooltip")
 
 ```
 Company ID = SFCPART000524
@@ -42,7 +42,7 @@ SiteURL = https://hcm68sales.successfactors.com/
 
 7. In the **Provisioning tab** complete the required fields using the API infomration below
 
-   ![alt_text](https://raw.githubusercontent.com/MarcoBlaesing/LabGuide/main/images/010/image08.png "image_tooltip")
+   ![alt_text](https://raw.githubusercontent.com/NicolasMiramon/LabGuide/main/images/010/image08.png "image_tooltip")
 
 
 ```
@@ -71,7 +71,7 @@ For the best experience, create your own SuccessFactors provisioning with your o
 
 Please do not configure "Schedule Import" in your own Okta tenant.
 
-   ![alt_text](https://raw.githubusercontent.com/MarcoBlaesing/LabGuide/main/images/010/image03.png "image_tooltip")
+   ![alt_text](https://raw.githubusercontent.com/NicolasMiramon/LabGuide/main/images/010/image03.png "image_tooltip")
 
 9. Complete the attribute mapping using the information below;
    In order to adjust profile mapping navigate to Map Profile attributes [Directory → Profile Editor → Successfactors → 'Successfactors to Okta' mapping]
@@ -110,4 +110,4 @@ Email:
     
     ***IMPORTANT: DO NOT IMPORT ALL USERS FROM SAP SUCCESS FACTORS***
 
-       ![alt_text](https://raw.githubusercontent.com/MarcoBlaesing/LabGuide/main/images/010/image07.png "image_tooltip")
+       ![alt_text](https://raw.githubusercontent.com/NicolasMiramon/LabGuide/main/images/010/image07.png "image_tooltip")
