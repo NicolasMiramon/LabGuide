@@ -68,9 +68,9 @@ To complete this lab you will need :
 
 Okta maintains a specific integration for Microsoft Office 365 in the Okta Integration Network (OIN). To add this to your Okta org, follow these steps:
 
-1.  Use a browser to open the administration UI of your Okta demo org
+1.  If not already opened, launch your Okta Admin console from the dedicated button 
 
-
+![alt_text](https://raw.githubusercontent.com/NicolasMiramon/LabGuide/main/images/009/image048.png "image_tooltip")
 
 
 2.  Navigate to **Applications \> Applications**.
