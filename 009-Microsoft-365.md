@@ -62,7 +62,7 @@ To complete this lab you will need :
 
 2. Have users on your tenant (imported from the HR SI or created manually in Okta) in order to assign the application and validate the user flow.
 
-3. A custom domain has already been configured in the O365 tenant. The domain with the format parislab**.onmicrosoft.com will be federated in this lab.
+3. A custom domain has already been configured in the O365 tenant. The domain with the format wiclab**.onmicrosoft.com will be federated in this lab.
 
 ## Add Microsoft Office 365 Application to Okta
 
