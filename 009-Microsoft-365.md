@@ -100,20 +100,20 @@ Okta maintains a specific integration for Microsoft Office 365 in the Okta Integ
 
 8.  Select the radio button for **WS-Federation**.
 
-
+![alt_text](https://raw.githubusercontent.com/NicolasMiramon/LabGuide/main/images/009/image05.png "image_tooltip")
 
 9.  Enter the *username* and *password* for the administrator of your
      Microsoft tenant.
-
+![alt_text](https://raw.githubusercontent.com/NicolasMiramon/LabGuide/main/images/009/image06.png "image_tooltip")
 10. Click **Fetch and Select** next to Office 365 Domains.
-![alt_text](https://raw.githubusercontent.com/NicolasMiramon/LabGuide/main/images/009/image05.png "image_tooltip")
+
 
 
 11. Select the custom DNS domain starting with "myfederated"
-![alt_text](https://raw.githubusercontent.com/NicolasMiramon/LabGuide/main/images/009/image06.png "image_tooltip")
+![alt_text](https://raw.githubusercontent.com/NicolasMiramon/LabGuide/main/images/009/image07.png "image_tooltip")
 12. Click **Select**.
 
-![alt_text](https://raw.githubusercontent.com/NicolasMiramon/LabGuide/main/images/009/image07.png "image_tooltip")
+
 ![alt_text](https://raw.githubusercontent.com/NicolasMiramon/LabGuide/main/images/009/image08.png "image_tooltip")
 
 
