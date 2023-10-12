@@ -278,7 +278,7 @@ Now that provisioning and single sign-on have both been configured, you
 can test them by assigning your Okta admin user to the Microsoft Office
 365 application and then attempting single sign-on.
 
-This section uses the Okta admin user ***your.name*\@okta.com** as the
+This section uses the Okta admin user ***your.name*\@your company domain.com** as the
 test user. This user will be mapped to
 ***your.name*\@yourdemodomain.com** by the custom username mapping you
 set up when configuring single sign-on.
@@ -352,7 +352,7 @@ You can now test single sign-on to Microsoft 365 for the assigned user.
 
 2.  Navigate to your Okta tenant. e.g. ***yourdemoorg*.okta.com**
 
-3.  Authenticate as your test user: e.g. ***your.name*\@okta.com**\
+3.  Authenticate as your test user: e.g. ***your.name*\@yourcompanydomain.com**
 
 
 
@@ -471,7 +471,7 @@ You can now test single sign-on to Microsoft 365 for your test user.
 2.  Navigate to your Okta tenant. e.g. ***yourdemoorg*.okta.com**
 
 3.  Authenticate as your test user: e.g.
-    > ***alex.anderson@yourdemodomain.com***\
+    > ***alex.anderson@yourcompanydomain.com***\
 
 
 
