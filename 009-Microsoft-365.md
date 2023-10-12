@@ -60,7 +60,9 @@ To complete this lab you will need :
 
 ![alt_text](https://raw.githubusercontent.com/NicolasMiramon/LabGuide/main/images/009/image047.png "image_tooltip")
 
-2. Have users on your tenant (imported from the HRIS or created manually) in order to assign the application and validate the user path.
+2. Have users on your tenant (imported from the HR SI or created manually in Okta) in order to assign the application and validate the user flow.
+
+3. A custom domain has already been configured in the O365 tenant. The domain with the format parislab**.onmicrosoft.com will be federated in this lab.
 
 ## Add Microsoft Office 365 Application to Okta
 
