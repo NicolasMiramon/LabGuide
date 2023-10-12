@@ -267,9 +267,10 @@ Follow these steps:
     -   Exchange Online (Plan 2)
 
 
-6.  Scroll to the bottom of the window and click **Save**.
+6.  Scroll to the bottom of the window and click on **Save**.
 ![alt_text](https://raw.githubusercontent.com/NicolasMiramon/LabGuide/main/images/009/image020.png "image_tooltip")
-OK. Provisioning is enabled and attribute mapping is done. You're ready to test.
+
+> Provisioning is enabled and attribute mapping is done. You're ready to test.
 
 # Test provisioning and single sign-on
 
