@@ -71,28 +71,28 @@ Okta maintains a specific integration for Microsoft Office 365 in the Okta Integ
 1.  Use a browser to open the administration UI of your Okta demo org
 
 
-![alt_text](https://raw.githubusercontent.com/NicolasMiramon/LabGuide/main/images/009/image01.png "image_tooltip")
+
 
 2.  Navigate to **Applications \> Applications**.
 
 3.  Click **Browse App Catalog** to open the Okta Integration Network
+![alt_text](https://raw.githubusercontent.com/NicolasMiramon/LabGuide/main/images/009/image01.png "image_tooltip")
 
-![alt_text](https://raw.githubusercontent.com/NicolasMiramon/LabGuide/main/images/009/image02.png "image_tooltip")
 
 4.  Search for and select the **Microsoft Office 365** integration.
+![alt_text](https://raw.githubusercontent.com/NicolasMiramon/LabGuide/main/images/009/image02.png "image_tooltip")
 
+
+5.  Click **Add integration**.
 ![alt_text](https://raw.githubusercontent.com/NicolasMiramon/LabGuide/main/images/009/image03.png "image_tooltip")
 
-5.  Click **Add integration**.\
 
-
-![alt_text](https://raw.githubusercontent.com/NicolasMiramon/LabGuide/main/images/009/image04.png "image_tooltip")
 
 6.  Complete the *Microsoft Tenant Name* field. This must match the
     > tenant name you chose when setting up your Microsoft tenant. If
     > your Microsoft tenant is *yourdemodomain*.onmicrosoft.com then
     > your Microsoft tenant name is *yourdemodomain*.
-
+![alt_text](https://raw.githubusercontent.com/NicolasMiramon/LabGuide/main/images/009/image04.png "image_tooltip")
 7.  Click **Next**.
 
 ![alt_text](https://raw.githubusercontent.com/NicolasMiramon/LabGuide/main/images/009/image05.png "image_tooltip")
