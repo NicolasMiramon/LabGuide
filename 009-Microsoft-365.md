@@ -114,15 +114,15 @@ Okta maintains a specific integration for Microsoft Office 365 in the Okta Integ
 12. Click **Select**.
 
 
-![alt_text](https://raw.githubusercontent.com/NicolasMiramon/LabGuide/main/images/009/image08.png "image_tooltip")
+
 
 
 13. Set *Application username format* to **Custom**.
 
-14. Enter the following for the expression - replacing
+14. Enter the following for the expression 
 
 > **String.substringBefore(user.login,\"@\") + \"@yourdemodomain.com\"**
-
+![alt_text](https://raw.githubusercontent.com/NicolasMiramon/LabGuide/main/images/009/image08.png "image_tooltip")
 15. Click **Done**.\
 
 Your Okta org, and your Microsoft 365 tenant, are now configured for
