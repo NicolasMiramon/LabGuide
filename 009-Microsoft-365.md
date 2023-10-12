@@ -73,6 +73,7 @@ Okta maintains a specific integration for Microsoft Office 365 in the Okta Integ
 ![alt_text](https://raw.githubusercontent.com/NicolasMiramon/LabGuide/main/images/009/image048.png "image_tooltip")
 
 
+
 2.  Navigate to **Applications \> Applications**.
 
 3.  Click **Browse App Catalog** to open the Okta Integration Network
