@@ -88,35 +88,32 @@ Okta maintains a specific integration for Microsoft Office 365 in the Okta Integ
 
 
 
-6.  Complete the *Microsoft Tenant Name* field. This must match the
-    > tenant name you chose when setting up your Microsoft tenant. If
+6.  Complete the *Microsoft Tenant Name* field. 
+    > This must match the tenant name you chose when setting up your Microsoft tenant. If
     > your Microsoft tenant is *yourdemodomain*.onmicrosoft.com then
     > your Microsoft tenant name is *yourdemodomain*.
-![alt_text](https://raw.githubusercontent.com/NicolasMiramon/LabGuide/main/images/009/image04.png "image_tooltip")
-7.  Click **Next**.
 
-![alt_text](https://raw.githubusercontent.com/NicolasMiramon/LabGuide/main/images/009/image05.png "image_tooltip")
+7.  Click **Next**.
+![alt_text](https://raw.githubusercontent.com/NicolasMiramon/LabGuide/main/images/009/image04.png "image_tooltip")
+
 
 
 8.  Select the radio button for **WS-Federation**.
 
-![alt_text](https://raw.githubusercontent.com/NicolasMiramon/LabGuide/main/images/009/image06.png "image_tooltip")
+
 
 9.  Enter the *username* and *password* for the administrator of your
-    > Microsoft tenant.
+     Microsoft tenant.
 
 10. Click **Fetch and Select** next to Office 365 Domains.
+![alt_text](https://raw.githubusercontent.com/NicolasMiramon/LabGuide/main/images/009/image05.png "image_tooltip")
 
-![alt_text](https://raw.githubusercontent.com/NicolasMiramon/LabGuide/main/images/009/image07.png "image_tooltip")
 
-11. Select the custom DNS domain that you configured when you were
-
-> If no DNS domains are shown here, refer to these instructions: [[Get
-> Microsoft E5
-> sandbox]{.underline}](https://docs.google.com/document/d/1qvjRcUefXQyfwOSJ0duK35ZdFX5HBgddsAguscZSpyo/minimalstatic#heading=h.q5u9bvuz3rr2)
-
+11. Select the custom DNS domain starting with "myfederated"
+![alt_text](https://raw.githubusercontent.com/NicolasMiramon/LabGuide/main/images/009/image06.png "image_tooltip")
 12. Click **Select**.
 
+![alt_text](https://raw.githubusercontent.com/NicolasMiramon/LabGuide/main/images/009/image07.png "image_tooltip")
 ![alt_text](https://raw.githubusercontent.com/NicolasMiramon/LabGuide/main/images/009/image08.png "image_tooltip")
 
 
