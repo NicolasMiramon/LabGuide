@@ -105,22 +105,24 @@ Okta maintains a specific integration for Microsoft Office 365 in the Okta Integ
 
 9.  Enter the *username* and *password* for the administrator of your
      Microsoft tenant.
+> Your Microsoft Tenant Admin has this syntax "labadmin@mywiclabxx.onmicrosoft.com" . The password is specified in the top-left launch window.
+
 ![alt_text](https://raw.githubusercontent.com/NicolasMiramon/LabGuide/main/images/009/image06.png "image_tooltip")
-10. Click **Fetch and Select** next to Office 365 Domains.
+11. Click **Fetch and Select** next to Office 365 Domains.
 
 
 
-11. Select the custom DNS domain **not starting with "mywiclab"**
+12. Select the custom DNS domain **not starting with "mywiclab"**
 ![alt_text](https://raw.githubusercontent.com/NicolasMiramon/LabGuide/main/images/009/image07.png "image_tooltip")
-12. Click **Select**.
+13. Click **Select**.
 
 
 
 
 
-13. Set *Application username format* to **Custom**.
+14. Set *Application username format* to **Custom**.
 
-14. Enter the following for the expression 
+15. Enter the following for the expression 
 
 > **String.substringBefore(user.login,\"@\") + \"@yourdemodomain.com\"**
 
