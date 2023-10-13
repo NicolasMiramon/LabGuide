@@ -17,7 +17,7 @@ Okta maintains a specific integration for SAP Success Factors in the Okta Integr
 
 3.  Click **Browse App Catalog** to open the Okta Integration Network
 
-4. **Search** the Okta Integration Network for SAP Success Factors
+4. **Search** for SAP Success Factors
    
 ![alt_text](https://raw.githubusercontent.com/NicolasMiramon/LabGuide/main/images/010/image00.png "image_tooltip")
 
@@ -41,8 +41,8 @@ Company ID = SFPART068962
 8. Now you need to configure the provisioning in order to push users from SAP to Okta. 
    Go to the **Provisioning** tab, click on **Configure API Integration**, click on **Enable API Integration**, enter the base URL, admin username and admin password (you can find them below) then click on **Test API Credentials**. If the test result is green, click on **Save**
 
-   > :warning: **Please copy and paste the admin password from this lab into Okta in order to avoid locking out the account**
-
+   [!WARNING] **Please copy and paste the admin password from this lab into Okta in order to avoid locking out the account**
+   
 
    ![alt_text](https://raw.githubusercontent.com/NicolasMiramon/LabGuide/main/images/010/image08.png "image_tooltip")
 
@@ -67,7 +67,7 @@ Import Groups                            checked
 ```
 
 
-9. The "Schedule Import" is being configured for "once a day" in HRM-SuccessFactors.okta.com.
+1. The "Schedule Import" is being configured for "once a day" in HRM-SuccessFactors.okta.com.
 
 For the best experience, create your own SuccessFactors provisioning with your own Okta tenant so that you can perform the manual import to verify the new employee that you created in SuccessFactors.com tenant. 
 
