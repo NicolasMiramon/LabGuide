@@ -33,11 +33,11 @@ Company ID = SFPART068962
 
 ```
 
-1. Select SAML 2.0 then click on **Done**.
+7. Select SAML 2.0 then click on **Done**.
 
    ![alt_text](https://raw.githubusercontent.com/NicolasMiramon/LabGuide/main/images/010/image06.png "image_tooltip")
 
-2. Now you need to configure the provisioning in order to push users from SAP to Okta.
+8. Now you need to configure the provisioning in order to push users from SAP to Okta.
    
    Go to the **Provisioning** tab, click on **Configure API Integration**, click on **Enable API Integration**, enter the base URL, admin username and admin password (you can find them below) then click on **Test API Credentials**. If the test result is green, click on **Save**
    
@@ -66,11 +66,19 @@ Import Groups                            checked
 ```
 
 
-9. In this section, you will configure the connector in order to customize the first name and last name of the SAP user before importing it into Okta.
+9.  You will now add some verifications on the first name and last name of the SAP user before importing it into Okta
 
    Go to **Provisioning** > **To Okta**, scroll down to the **Okta Attributes Mapping** section,  click on the pencil next to First Name, choose **Expression** from the attribute value then copy the expression language below and click on **Save**. Do the same thing for Last Name.
 
+![alt_text](https://raw.githubusercontent.com/NicolasMiramon/LabGuide/main/images/010/image13.png "image_tooltip")
 
+
+![alt_text](https://raw.githubusercontent.com/NicolasMiramon/LabGuide/main/images/010/image14.png "image_tooltip")
+
+
+![alt_text](https://raw.githubusercontent.com/NicolasMiramon/LabGuide/main/images/010/image15.png "image_tooltip")
+
+![alt_text](https://raw.githubusercontent.com/NicolasMiramon/LabGuide/main/images/010/image16.png "image_tooltip")
 
 ```
 FirstName:
@@ -80,7 +88,9 @@ LastName:
  String.len(String.removeSpaces(appuser.lastName)) > 0 ? appuser.lastName : "L_" + appuser.userName
 ```
 
-10.  Search for user XXXXX and selct the check box to only import this user from SAP Success Factors to your Okta Org
+10.  You're ready now to import the users from SAP to Okta. Note that the import can be scheduled, however we prefer to do it manually in this lab in order to see this step.
+    
+    Go to 
     
     ***IMPORTANT: DO NOT IMPORT ALL USERS FROM SAP SUCCESS FACTORS***
 
