@@ -5,15 +5,13 @@ Overview
 This guide provides instructions for integrating Okta with SAP Success Factors so that the following use cases can be demonstrated:
 HRaaS - Sourcing a user profile from SAP Success Factors into Universal Directory.
 
-This lab uses a pre-built and managed instance of SAP Success Factors. The environment has users and groups defined in a pre-designed organisational structure. The integration has two connections. The first uses SSO integration to access the SAP Success Factors tenant. The Second uses an API connection to import users from SAP Success Factors into Okta’s Universal Directory.
+This lab uses a pre-built and managed instance of SAP Success Factors. The environment has users and groups defined in a pre-designed organisational structure. The integration uses an API connection to import users from SAP Success Factors into Okta’s Universal Directory.
 
-Okta maintains a specific integration for SAP Success Factors in the
-Okta Integration Network (OIN). To add this to your Okta org, follow
-these steps:
+Okta maintains a specific integration for SAP Success Factors in the Okta Integration Network (OIN). To add this to your Okta org, follow these steps:
 
-1.  Use a browser to open the administration UI of your Okta demo org
+1.  Open the admin console of your Okta demo org by clicking on the **Launch** button at the top left of this lab
 
-2.  Navigate to **Applications \> Applications**.
+2.  Navigate to **Applications \> Applications**
 
 ![alt_text](https://raw.githubusercontent.com/NicolasMiramon/LabGuide/main/images/009/image01.png "image_tooltip")
 
@@ -23,34 +21,38 @@ these steps:
    
 ![alt_text](https://raw.githubusercontent.com/NicolasMiramon/LabGuide/main/images/010/image00.png "image_tooltip")
 
-5. Select to **add the integration**
+5. click **Add Integration**
 
 ![alt_text](https://raw.githubusercontent.com/NicolasMiramon/LabGuide/main/images/010/image05.png "image_tooltip")
 
-6. In the **General tab** complete the required fields using the information below
+6. In the **General tab**, copy and paste this company ID **SFPART068962** then click **Next** 
 
    ![alt_text](https://raw.githubusercontent.com/NicolasMiramon/LabGuide/main/images/010/image06.png "image_tooltip")
 
 ```
-Company ID = SFCPART000524
-
-SignOn URL = https://hcm68sales.successfactors.com/login?company=SFCPART000524
-
-SiteURL = https://hcm68sales.successfactors.com/ 
+Company ID = SFPART068962
 
 ```
 
-7. In the **Provisioning tab** complete the required fields using the API infomration below
+7. Select SAML 2.0 then click **Save**.
+
+   ![alt_text](https://raw.githubusercontent.com/NicolasMiramon/LabGuide/main/images/010/image06.png "image_tooltip")
+
+8. Now you need to configure the provisioning in order to push users from SAP to Okta. 
+   Go to the **Provisioning** tab, click on **Configure API Integration**, click on **Enable API Integration**, enter the base URL, admin username and admin password (you can find them below) then click on **Test API Credentials**. If the test result is green, click on **Save**
+
+   > :warning: **Please copy and paste the admin password from this lab into Okta in order to avoid locking out the account**
+
 
    ![alt_text](https://raw.githubusercontent.com/NicolasMiramon/LabGuide/main/images/010/image08.png "image_tooltip")
 
 
 ```
-Base URL for Web Service     https://api68sales.successfactors.com
+Base URL for Web Service     https://apisalesdemo2.successfactors.eu
 
 Admin Username               paswin
 
-Admin Password               XXXXX
+Admin Password               Part@dc55
 
 Pre-Start Interval           0
 
@@ -65,7 +67,7 @@ Import Groups                            checked
 ```
 
 
-8. The "Schedule Import" is being configured for "once a day" in HRM-SuccessFactors.okta.com.
+9. The "Schedule Import" is being configured for "once a day" in HRM-SuccessFactors.okta.com.
 
 For the best experience, create your own SuccessFactors provisioning with your own Okta tenant so that you can perform the manual import to verify the new employee that you created in SuccessFactors.com tenant. 
 
