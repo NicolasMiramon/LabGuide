@@ -41,7 +41,9 @@ Company ID = SFPART068962
 8. Now you need to configure the provisioning in order to push users from SAP to Okta. 
    Go to the **Provisioning** tab, click on **Configure API Integration**, click on **Enable API Integration**, enter the base URL, admin username and admin password (you can find them below) then click on **Test API Credentials**. If the test result is green, click on **Save**
 
-   [!WARNING] **Please copy and paste the admin password from this lab into Okta in order to avoid locking out the account**
+   > **Warning**
+   > This is a warning
+
    > [!WARNING]  
    > Please copy and paste the admin password from this lab into Okta in order to avoid locking out the account
 
