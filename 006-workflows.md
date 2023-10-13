@@ -53,6 +53,7 @@ For the workflows in the Okta Workflow Pack to work you will need:
 3. Configure you Okta connection, you will need
 
    3.1. Okta domain name of your tenant (without the https)
+
    3.2. Okta Workflows App client ID and Client Secret, to get them, go Okta Workflows OAuth application, under Applications in the Okta Admin console
 
 ![](https://raw.githubusercontent.com/NicolasMiramon/LabGuide/main/images/006-1/image18.png)
@@ -64,11 +65,13 @@ For the workflows in the Okta Workflow Pack to work you will need:
 4. Configure Office 365 Admin connector
 
    4.1. Go to Connections tab and click New Connection
+
    4.2. Select Office 365 Admin from the list and click Create
 
 ![](https://raw.githubusercontent.com/NicolasMiramon/LabGuide/main/images/006-1/image20.png)
 
    4.3. Log in with your Microsoft O365 Admin account if you are not already logged in.
+
    4.4. Check the box Consent on behalf of your organization and click on Accept
 
 ![](https://raw.githubusercontent.com/NicolasMiramon/LabGuide/main/images/006-1/image21.png)
@@ -87,10 +90,10 @@ For the workflows in the Okta Workflow Pack to work you will need:
 
 ### Additional prerequisites
 
-1. An existing user (that will represent the manager user) in Okta and Office 365 where the username in Okta and in O365 are the same (the user’s email address). 
+1. An existing user (that will represent the manager user) in Okta and Office 365 **where the username in Okta and in O365 are the same (the user’s email address)**. 
 The manager user’s email address needs to point to a valid email address and have the appropriate Office 365 licenses so that the manager can get the email notifications as part of the flow.
 
-2. An existing target user (that will represent the target user) in Okta where the Okta Primary Email Address for that user is the same as the user’s Office 365 username. The manager attribute in Okta Universal Directory will need to be the username of the Okta user that represents the manager and you created in the step above.
+2. An existing target user (that will represent the target user) in Okta where the **Okta Primary Email Address for that user is the same as the user’s Office 365 username**. The manager attribute in Okta Universal Directory will need to be the username of the Okta user that represents the manager and you created in the step above.
 **This target user must be assign to Office 365 application.**
 
 
@@ -98,7 +101,7 @@ The manager user’s email address needs to point to a valid email address and h
 
 ### Initialisation instructions
 
-Please download the flowpack below (right click -> Save link as)
+**Please download the flowpack below (right click -> Save link as)**
 
 https://raw.githubusercontent.com/NicolasMiramon/LabGuide/main/files/office365OnboardingFlow.folder
 
@@ -123,6 +126,7 @@ https://raw.githubusercontent.com/NicolasMiramon/LabGuide/main/files/office365On
 ![](https://raw.githubusercontent.com/NicolasMiramon/LabGuide/main/images/006-1/image10.png)
 
 6. Open the first flow \[MAIN FLOW\] New Hire Information by clicking on its name
+
 7. Scroll to the right, you will see the card Send Email inside the If/Else Card, click on the Choose Connection
 
 ![](https://raw.githubusercontent.com/NicolasMiramon/LabGuide/main/images/006-1/image9.png)
@@ -178,6 +182,8 @@ On the new user (Elise Dupont) profil you will see :
 
 - A channel in Teams "OKTA EMEA WIC Lab"
 
+![](https://raw.githubusercontent.com/NicolasMiramon/LabGuide/main/images/006-1/image31.png)
 
 - A new calendar invitation
 
+![](https://raw.githubusercontent.com/NicolasMiramon/LabGuide/main/images/006-1/image32.png)
