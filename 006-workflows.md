@@ -101,7 +101,7 @@ The manager user’s email address needs to point to a valid email address and h
 
 ### Initialisation instructions
 
-Please download the flowpack below (right click -> Save link as)
+**Please download the flowpack below (right click -> Save link as)**
 
 https://raw.githubusercontent.com/NicolasMiramon/LabGuide/main/files/office365OnboardingFlow.folder
 
@@ -182,6 +182,8 @@ On the new user (Elise Dupont) profil you will see :
 
 - A channel in Teams "OKTA EMEA WIC Lab"
 
+![](https://raw.githubusercontent.com/NicolasMiramon/LabGuide/main/images/006-1/image31.png)
 
 - A new calendar invitation
 
+![](https://raw.githubusercontent.com/NicolasMiramon/LabGuide/main/images/006-1/image32.png)
