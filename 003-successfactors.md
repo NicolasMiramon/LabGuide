@@ -1,6 +1,6 @@
 ### Integrate SAP Successfactors
 
-Overview
+**Overview**
 
 This guide provides instructions for integrating Okta with SAP Success Factors so that the following use cases can be demonstrated:
 HRaaS - Sourcing a user profile from SAP Success Factors into Universal Directory.
@@ -11,21 +11,19 @@ Okta maintains a specific integration for SAP Success Factors in the Okta Integr
 
 1.  Open the admin console of your Okta demo org by clicking on the **Launch** button at the top left of this lab
 
-2.  Navigate to **Applications \> Applications**
-
+2.  Navigate to **Applications \> Applications** then click on **Browse App Catalog**
+   
    ![alt_text](https://raw.githubusercontent.com/NicolasMiramon/LabGuide/main/images/009/image01.png "image_tooltip")
 
-3.  Click **Browse App Catalog** to open the Okta Integration Network
-
-4. **Search** for SAP Success Factors
+3. Search for **SAP Success Factors**
    
    ![alt_text](https://raw.githubusercontent.com/NicolasMiramon/LabGuide/main/images/010/image00.png "image_tooltip")
 
-5. click **Add Integration**
+4. click **Add Integration**
 
    ![alt_text](https://raw.githubusercontent.com/NicolasMiramon/LabGuide/main/images/010/image05.png "image_tooltip")
 
-6. In the **General tab**, copy and paste this company ID **SFPART068962** then click **Next** 
+5. In the **General tab**, copy and paste this company ID **SFPART068962** then click **Next** 
 
    ![alt_text](https://raw.githubusercontent.com/NicolasMiramon/LabGuide/main/images/010/image06.png "image_tooltip")
 ```
@@ -33,7 +31,7 @@ Company ID = SFPART068962
 
 ```
 
-7. Select SAML 2.0 then click on **Done**.
+7. Select **SAML 2.0** then click on **Done**.
 
    ![alt_text](https://raw.githubusercontent.com/NicolasMiramon/LabGuide/main/images/010/image09.png "image_tooltip")
 
@@ -41,7 +39,7 @@ Company ID = SFPART068962
    
    Go to the **Provisioning** tab, click on **Configure API Integration**, click on **Enable API Integration**, enter the base URL, admin username and admin password (you can find them below) then click on **Test API Credentials**. If the test result is green, click on **Save**
    
-   > **PLEASE COPY AND PASTE THE ADMIN PASSWORD FROM THIS LAB INTO OKTA TO AVOID LOCKING OUT THE ACCOUNT**
+   **PLEASE COPY AND PASTE THE ADMIN PASSWORD FROM THIS LAB INTO OKTA TO AVOID LOCKING OUT THE ACCOUNT**
 
    ![alt_text](https://raw.githubusercontent.com/NicolasMiramon/LabGuide/main/images/010/image08.png "image_tooltip")
 
@@ -67,8 +65,8 @@ Import Groups                            checked
 
 
 9.  You will now add some verifications on the first name and last name of the SAP user before importing it into Okta
-
-   Go to **Provisioning** > **To Okta**, scroll down to the **Okta Attributes Mapping** section,  click on the pencil next to First Name, choose **Expression** from the attribute value then copy the expression language below and click on **Save**. Do the same thing for Last Name.
+    
+    Go to **Provisioning** > **To Okta**, scroll down to the **Okta Attributes Mapping** section,  click on the pencil next to **First Name**, choose **Expression** from the attribute value then copy the expression language below and click on **Save**. Do the same thing for **Last Name**.
 
    ![alt_text](https://raw.githubusercontent.com/NicolasMiramon/LabGuide/main/images/010/image13.png "image_tooltip")
 
@@ -76,27 +74,25 @@ Import Groups                            checked
    ![alt_text](https://raw.githubusercontent.com/NicolasMiramon/LabGuide/main/images/010/image14.png "image_tooltip")
 
 
-   ![alt_text](https://raw.githubusercontent.com/NicolasMiramon/LabGuide/main/images/010/image15.png "image_tooltip")
-
    ![alt_text](https://raw.githubusercontent.com/NicolasMiramon/LabGuide/main/images/010/image16.png "image_tooltip")
 
 ```
+Expression Languages:
+
 FirstName:
- String.len(String.removeSpaces(appuser.firstName)) > 0 ? appuser.firstName : "F_" + appuser.userName
+String.len(String.removeSpaces(appuser.firstName)) > 0 ? appuser.firstName : "F_" + appuser.userName
 
 LastName:
- String.len(String.removeSpaces(appuser.lastName)) > 0 ? appuser.lastName : "L_" + appuser.userName
+String.len(String.removeSpaces(appuser.lastName)) > 0 ? appuser.lastName : "L_" + appuser.userName
 ```
 
-10.  You are now ready to import the users from SAP to Okta. The import can be scheduled automatically, however we prefer to do it manually in this lab in order to see this step.
-    
-    Go to the **Import** tab, click on **Import Now**, select **Full import** then click on **Import**.
+10.   You are now ready to import the users from SAP to Okta. The import can be scheduled automatically, however we prefer to do it manually in this lab in order to see this step. Go to the **Import** tab, click on **Import Now**, select **Full import** then click on **Import**.
 
    ![alt_text](https://raw.githubusercontent.com/NicolasMiramon/LabGuide/main/images/010/image18.png "image_tooltip")
 
    ![alt_text](https://raw.githubusercontent.com/NicolasMiramon/LabGuide/main/images/010/image19.png "image_tooltip")
 
-11. Users have been imported into Okta but not confirmed yet, this is an extra step that can be skipped if needed. For the purpose of this lab, we kept it manual.
+11.  Users have been imported into Okta but not confirmed yet, this is an extra step that can be skipped if needed. For the purpose of this lab, we kept it manual.
 
    We will confirm the import of "Emily Boone".
 
@@ -104,7 +100,7 @@ LastName:
 
    Click on **Auto-activate users after confirmation** then on **Confirm**
 
-   The user Emily has been imported into Okta, you can check it in **Directory** > **People**.
+   The user Emily has been imported into Okta.
 
    ![alt_text](https://raw.githubusercontent.com/NicolasMiramon/LabGuide/main/images/010/image24.png "image_tooltip")
 
