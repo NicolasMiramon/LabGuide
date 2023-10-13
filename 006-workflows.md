@@ -103,7 +103,7 @@ The manager user’s email address needs to point to a valid email address and h
 
 **Please download the flowpack below (right click -> Save link as)**
 
-https://raw.githubusercontent.com/NicolasMiramon/LabGuide/main/files/office365OnboardingFlow.folder
+https://raw.githubusercontent.com/NicolasMiramon/LabGuide/main/files/o365OnboardingFlow.folder
 
 1. Go to the Okta Workflows Console from the Okta Admin Console
 
