@@ -35,7 +35,7 @@ Company ID = SFPART068962
 
 7. Select SAML 2.0 then click on **Done**.
 
-   ![alt_text](https://raw.githubusercontent.com/NicolasMiramon/LabGuide/main/images/010/image06.png "image_tooltip")
+   ![alt_text](https://raw.githubusercontent.com/NicolasMiramon/LabGuide/main/images/010/image09.png "image_tooltip")
 
 8. Now you need to configure the provisioning in order to push users from SAP to Okta.
    
