@@ -149,6 +149,8 @@ https://raw.githubusercontent.com/NicolasMiramon/LabGuide/main/files/office365On
 
 Create or import a new user with a manager assign (in our case Alex meyer) and assign Office 365 application.
 
+I our case we have created the user Elise Dupont in Okta.
+
 ![](https://raw.githubusercontent.com/NicolasMiramon/LabGuide/main/images/006-1/image26.png)
 
 You will be able to visualise the flow execution in real time by clicking on "Execution History" on the main flow.
