@@ -28,21 +28,20 @@ Okta maintains a specific integration for SAP Success Factors in the Okta Integr
 6. In the **General tab**, copy and paste this company ID **SFPART068962** then click **Next** 
 
    ![alt_text](https://raw.githubusercontent.com/NicolasMiramon/LabGuide/main/images/010/image06.png "image_tooltip")
-
 ```
 Company ID = SFPART068962
 
 ```
 
-7. Select SAML 2.0 then click **Save**.
+1. Select SAML 2.0 then click on **Done**.
 
    ![alt_text](https://raw.githubusercontent.com/NicolasMiramon/LabGuide/main/images/010/image06.png "image_tooltip")
 
-8. Now you need to configure the provisioning in order to push users from SAP to Okta. 
+2. Now you need to configure the provisioning in order to push users from SAP to Okta.
+   
    Go to the **Provisioning** tab, click on **Configure API Integration**, click on **Enable API Integration**, enter the base URL, admin username and admin password (you can find them below) then click on **Test API Credentials**. If the test result is green, click on **Save**
-
-   [!Warning]  
-   > **Please copy and paste the admin password from this lab into Okta in order to avoid locking out the account**
+   
+   > **PLEASE COPY AND PASTE THE ADMIN PASSWORD FROM THIS LAB INTO OKTA TO AVOID LOCKING OUT THE ACCOUNT**
 
    ![alt_text](https://raw.githubusercontent.com/NicolasMiramon/LabGuide/main/images/010/image08.png "image_tooltip")
 
@@ -67,48 +66,21 @@ Import Groups                            checked
 ```
 
 
-1. The "Schedule Import" is being configured for "once a day" in HRM-SuccessFactors.okta.com.
+9. In this section, you will configure the connector in order to customize the first name and last name of the SAP user before importing it into Okta.
 
-For the best experience, create your own SuccessFactors provisioning with your own Okta tenant so that you can perform the manual import to verify the new employee that you created in SuccessFactors.com tenant. 
+   Go to **Provisioning** > **To Okta**, scroll down to the **Okta Attributes Mapping** section,  click on the pencil next to First Name, choose **Expression** from the attribute value then copy the expression language below and click on **Save**. Do the same thing for Last Name.
 
-Please do not configure "Schedule Import" in your own Okta tenant.
-
-   ![alt_text](https://raw.githubusercontent.com/NicolasMiramon/LabGuide/main/images/010/image03.png "image_tooltip")
-
-9. Complete the attribute mapping using the information below;
-   In order to adjust profile mapping navigate to Map Profile attributes [Directory → Profile Editor → Successfactors → 'Successfactors to Okta' mapping]
 
 
 ```
-Login:
-
-String.stringContains(appuser.person___logon_user_name, "@") ?
-   appuser.person___logon_user_name : appuser.person___personal_information___first_name +
-   "." + appuser.person___personal_information___last_name + "@" + org.subdomain + ".com"
-
-Okta UserName Format:
-(Under 'Provisioning' -> To Okta -> 'General' -> Okta Username format -> Select 'Custom'):
-
- String.stringContains(appuser.person___logon_user_name, "@") ? appuser.person___logon_user_name :
-   appuser.person___logon_user_name + "@" + org.subdomain + ".com"
-
-
 FirstName:
- String.len(String.removeSpaces(appuser.person___personal_information___first_name)) > 0 ?
-  appuser.person___personal_information___first_name : "F_" + appuser.person___logon_user_name
+ String.len(String.removeSpaces(appuser.firstName)) > 0 ? appuser.firstName : "F_" + appuser.userName
 
 LastName:
- String.len(String.removeSpaces(appuser.person___personal_information___last_name)) > 0 ? 
-  appuser.person___personal_information___last_name : "L_" + appuser.person___logon_user_name
-
-
-Email:
- String.len(String.removeSpaces(appuser.person___email_information___email_address)) > 0 ?    
-  appuser.person___email_information___email_address : appuser.person___logon_user_name + "@" + org.subdomain + ".com"
-
+ String.len(String.removeSpaces(appuser.lastName)) > 0 ? appuser.lastName : "L_" + appuser.userName
 ```
 
-10. Search for user XXXXX and selct the check box to only import this user from SAP Success Factors to your Okta Org
+10.  Search for user XXXXX and selct the check box to only import this user from SAP Success Factors to your Okta Org
     
     ***IMPORTANT: DO NOT IMPORT ALL USERS FROM SAP SUCCESS FACTORS***
 
