@@ -112,7 +112,7 @@ Okta maintains a specific integration for Microsoft Office 365 in the Okta Integ
 
 
 
-12. Select the custom DNS domain **not starting with "mywiclab"**
+12. Select the custom DNS domain **not starting with "wiclabxx"**
 ![alt_text](https://raw.githubusercontent.com/NicolasMiramon/LabGuide/main/images/009/image07.png "image_tooltip")
 13. Click **Select**.
 
