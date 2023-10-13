@@ -456,7 +456,7 @@ This should not be the admin user (which is already directly assigned to the app
 The user is now assigned to the group and will be assigned to the Salesforce application using the attribute mapping associated with the group assignment.
 
 
-### Test single sign-on
+## Test single sign-on
 
 You can now test single sign-on to Salesforce for your test user.
 
