@@ -139,6 +139,7 @@ Use a browser that is not logged into your Okta Salesforce.  If using Chrome, yo
 
 ![alt_text](https://raw.githubusercontent.com/MarcoBlaesing/LabGuide/main/images/004/image9.png "image_tooltip")
 
+    If SalesForce ask for an OTP code sent by email, please contact your Okta animator for the access
 
 2. Login to Salesforce using the administrator account of your developer edition instance.
 
@@ -258,12 +259,15 @@ To make the lab run smoothly, all the Salesforce configuration tasks involved in
 
 2. Click on the **Provisioning** tab and click the **Configure API integration **button.
 
+To find the Consumer Key and Consumer Secret please consult the attached document with information about your SalesForce tenant.  
 
 ![alt_text](https://raw.githubusercontent.com/MarcoBlaesing/LabGuide/main/images/004/image32.png "image_tooltip")
 
 
 3. Check the checkbox for **Enable API integration**.
+
 4. Copy and paste the values for _OAuth Consumer Key _and _OAuth Consumer Secret_ from the Salesforce Connected App properties page.
+
 5. Click **Authenticate with Salesforce.com**.
 
     A browser pop-up opens:
@@ -271,6 +275,7 @@ To make the lab run smoothly, all the Salesforce configuration tasks involved in
 
 ![alt_text](https://raw.githubusercontent.com/MarcoBlaesing/LabGuide/main/images/004/image33.png "image_tooltip")
 
+    If SalesForce ask for an OTP code sent by email, please contact your Okta animator for the access
 
 6. Authenticate to your Salesforce tenant the administrative user. \
 A consent page is displayed asking you to grant permissions to your Okta org (which is connecting as the Connected App you created in the previous section):
@@ -339,146 +344,6 @@ Follow these steps to enable provisioning:
 5. Click **Save**.
 
 OK.  Provisioning is now enabled.
-
-
-## Import Salesforce admin account
-
-In this section you will import your Salesforce admin account into Okta and assign the account to your Okta admin user.  Once this is done, you’ll be able to perform single sign-on from your Okta admin account to your Salesforce admin account.
-
-
-### Configure import
-
-In this section you will configure inbound provisioning from Salesforce to Okta.  This will allow you to perform a one-time import so you can assign the existing Salesforce admin account to your Okta admin user.
-
-In fact, you could perform this one-time import without doing any configuration, and manually match the account, but it makes sense to set up account matching for completeness.  Follow these steps:
-
-
-![alt_text](https://raw.githubusercontent.com/MarcoBlaesing/LabGuide/main/images/004/image39.png "image_tooltip")
-
-
-
-
-1. Select the **Provisioning** tab in the **Salesforce** app definition.
-2. Select **To Okta**.
-3. Click **Edit** to edit the import settings.
-
-
-![alt_text](https://raw.githubusercontent.com/MarcoBlaesing/LabGuide/main/images/004/image40.png "image_tooltip")
-
-
-
-    The Okta username format specifies the Okta username that will be used if a new user needs to be created to own an imported Salesforce account.  You will use a custom expression.
-
-4. Select **Custom** for Okta username format.
-5. Enter the following expression:
-
-        **String.substringBefore(appuser.userName,"@") + "@yourdemodomain.com"**
-
-6. Click **Save**.
-
-
-![alt_text](https://raw.githubusercontent.com/MarcoBlaesing/LabGuide/main/images/004/image41.png "image_tooltip")
-
-
-
-    You now need to change the creation and matching setting so that it matches based on the Okta username rather than email address.
-
-7. Click **Edit** in the _User Creation & Matching_ section.
-
-
-![alt_text](https://raw.githubusercontent.com/MarcoBlaesing/LabGuide/main/images/004/image42.png "image_tooltip")
-
-
-8. For _Imported user is an exact match to Okta user if_, select radio button for **Okta username format matches**.
-9. Check the checkbox for **Partial match on first and last name**. \
-This will give a 2nd chance at matching even if the username match doesn’t work.  You will need this to match your Okta admin account because the usernames won’t match.
-10. Click **Save**.
-
-
-### Perform one time import
-
-You will now perform a one-time import from Salesforce.  This will import all existing Salesforce accounts (including your admin account) and attempt to match them to existing Okta users.
-
-Follow these steps:
-
-
-![alt_text](https://raw.githubusercontent.com/MarcoBlaesing/LabGuide/main/images/004/image43.png "image_tooltip")
-
-
-
-
-1. Select the **Import** tab in the** Salesforce.com** application definition.
-2. Click **Import Now**. \
-This initiates a one time import operation.  When complete you will see a status pop-up:
-
-
-![alt_text](https://raw.githubusercontent.com/MarcoBlaesing/LabGuide/main/images/004/image44.png "image_tooltip")
-
-
-3. Click **OK**.
-
-    The results are shown:
-
-
-![alt_text](https://raw.githubusercontent.com/MarcoBlaesing/LabGuide/main/images/004/image45.png "image_tooltip")
-
-
-
-    The import results show that your Salesforce admin account has been imported and, in this case, tentatively associated with the Okta admin user based on a partial match (first and last names match).
-
-
-    You can also see that other users have been imported but have not been matched.  In this case the suggested action is to create a new user in Okta for each one.  You probably don’t want to do this.
-
-4. For each account (except the admin account), click the **arrow icon** on the card and select **IGNORE this user for now** from the drop-down menu.
-
-
-![alt_text](https://raw.githubusercontent.com/MarcoBlaesing/LabGuide/main/images/004/image46.png "image_tooltip")
-
-
-5. Select the checkbox to accept the suggested match for the admin user.
-6. Click** Confirm Assignments**.
-
-
-![alt_text](https://raw.githubusercontent.com/MarcoBlaesing/LabGuide/main/images/004/image47.png "image_tooltip")
-
-
-7. Click **Confirm**.
-
-The account assignment is complete.
-
-
-## Test single sign-on
-
-You will now test single sign-on from Okta to Salesforce.
-
-This test uses the Okta admin user **your.name@okta.com** as the test user.  This user was assigned the Salesforce admin account, **your.name@yourdemodomain.com**,  using an import operation.
-
-
-
-1. Open a new browser window that is not signed into Okta or Salesforce. \
-This could be a private browsing window, a different profile, or a different browser.
-2. Navigate to your Okta tenant. e.g. **_yourdemoorg_.okta.com**
-3. Authenticate as your test user: e.g._ **your.name@okta.com**_ \
-You should end up on your Okta dashboard and see that a tile for Salesforce is now shown:
-
-
-![alt_text](https://raw.githubusercontent.com/MarcoBlaesing/LabGuide/main/images/004/image48.png "image_tooltip")
-
-
-4. Click the tile for **Salesforce**. \
-If single sign-on is successful you will see the **Salesforce** home page:
-
-
-![alt_text](https://raw.githubusercontent.com/MarcoBlaesing/LabGuide/main/images/004/image49.png "image_tooltip")
-
-
-5. Click the identity icon in the top-right of the page.
-
-    Notice the name shown in the pop-up window.  This should show that you are authenticated as your admin user.  Single sign-on was successful!
-
-6. Click **Log out **to clear the session.  Close the browser you used for the test.
-
-You have successfully tested Single Sign-On from Okta to Salesforce.
 
 
 ## Configure group assignment
@@ -595,17 +460,15 @@ The user is now assigned to the group and will be assigned to the Salesforce app
 
 You can now test single sign-on to Salesforce for your test user.
 
-
-
 1. Open a new browser window that is not signed into Okta or Salesforce. \
 This could be a private browsing window, a different profile, or a different browser.
+
 2. Navigate to your Okta tenant. e.g. **_yourdemoorg_.okta.com**
+
 3. Authenticate as your test user: e.g. **_alex.anderson@yourdemodomain.com_** \
 You should end up on your Okta dashboard and see that a tile for Salesforce.com is shown:
 
-
 ![alt_text](https://raw.githubusercontent.com/MarcoBlaesing/LabGuide/main/images/004/image60.png "image_tooltip")
-
 
 4. Click the tile for **Salesforce.com**. \
 If single sign-on is successful you will see the Salesforce Chatter homepage:
