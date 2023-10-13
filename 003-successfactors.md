@@ -42,7 +42,7 @@ Company ID = SFPART068962
    Go to the **Provisioning** tab, click on **Configure API Integration**, click on **Enable API Integration**, enter the base URL, admin username and admin password (you can find them below) then click on **Test API Credentials**. If the test result is green, click on **Save**
 
    [!Warning]  
-   > **Please copy and paste the admin password from this lab into Okta in order to avoid locking out the account.**
+   > **Please copy and paste the admin password from this lab into Okta in order to avoid locking out the account**
 
    ![alt_text](https://raw.githubusercontent.com/NicolasMiramon/LabGuide/main/images/010/image08.png "image_tooltip")
 
