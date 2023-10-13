@@ -13,17 +13,17 @@ Okta maintains a specific integration for SAP Success Factors in the Okta Integr
 
 2.  Navigate to **Applications \> Applications**
 
-![alt_text](https://raw.githubusercontent.com/NicolasMiramon/LabGuide/main/images/009/image01.png "image_tooltip")
+   ![alt_text](https://raw.githubusercontent.com/NicolasMiramon/LabGuide/main/images/009/image01.png "image_tooltip")
 
 3.  Click **Browse App Catalog** to open the Okta Integration Network
 
 4. **Search** for SAP Success Factors
    
-![alt_text](https://raw.githubusercontent.com/NicolasMiramon/LabGuide/main/images/010/image00.png "image_tooltip")
+   ![alt_text](https://raw.githubusercontent.com/NicolasMiramon/LabGuide/main/images/010/image00.png "image_tooltip")
 
 5. click **Add Integration**
 
-![alt_text](https://raw.githubusercontent.com/NicolasMiramon/LabGuide/main/images/010/image05.png "image_tooltip")
+   ![alt_text](https://raw.githubusercontent.com/NicolasMiramon/LabGuide/main/images/010/image05.png "image_tooltip")
 
 6. In the **General tab**, copy and paste this company ID **SFPART068962** then click **Next** 
 
@@ -70,15 +70,15 @@ Import Groups                            checked
 
    Go to **Provisioning** > **To Okta**, scroll down to the **Okta Attributes Mapping** section,  click on the pencil next to First Name, choose **Expression** from the attribute value then copy the expression language below and click on **Save**. Do the same thing for Last Name.
 
-![alt_text](https://raw.githubusercontent.com/NicolasMiramon/LabGuide/main/images/010/image13.png "image_tooltip")
+   ![alt_text](https://raw.githubusercontent.com/NicolasMiramon/LabGuide/main/images/010/image13.png "image_tooltip")
 
 
-![alt_text](https://raw.githubusercontent.com/NicolasMiramon/LabGuide/main/images/010/image14.png "image_tooltip")
+   ![alt_text](https://raw.githubusercontent.com/NicolasMiramon/LabGuide/main/images/010/image14.png "image_tooltip")
 
 
-![alt_text](https://raw.githubusercontent.com/NicolasMiramon/LabGuide/main/images/010/image15.png "image_tooltip")
+   ![alt_text](https://raw.githubusercontent.com/NicolasMiramon/LabGuide/main/images/010/image15.png "image_tooltip")
 
-![alt_text](https://raw.githubusercontent.com/NicolasMiramon/LabGuide/main/images/010/image16.png "image_tooltip")
+   ![alt_text](https://raw.githubusercontent.com/NicolasMiramon/LabGuide/main/images/010/image16.png "image_tooltip")
 
 ```
 FirstName:
@@ -88,10 +88,27 @@ LastName:
  String.len(String.removeSpaces(appuser.lastName)) > 0 ? appuser.lastName : "L_" + appuser.userName
 ```
 
-10.  You're ready now to import the users from SAP to Okta. Note that the import can be scheduled, however we prefer to do it manually in this lab in order to see this step.
+10.  You are now ready to import the users from SAP to Okta. The import can be scheduled automatically, however we prefer to do it manually in this lab in order to see this step.
     
-    Go to 
-    
-    ***IMPORTANT: DO NOT IMPORT ALL USERS FROM SAP SUCCESS FACTORS***
+    Go to the **Import** tab, click on **Import Now**, select **Full import** then click on **Import**.
 
-       ![alt_text](https://raw.githubusercontent.com/NicolasMiramon/LabGuide/main/images/010/image07.png "image_tooltip")
+   ![alt_text](https://raw.githubusercontent.com/NicolasMiramon/LabGuide/main/images/010/image18.png "image_tooltip")
+
+   ![alt_text](https://raw.githubusercontent.com/NicolasMiramon/LabGuide/main/images/010/image19.png "image_tooltip")
+
+11. Users have been imported into Okta but not confirmed yet, this is an extra step that can be skipped if needed. For the purpose of this lab, we kept it manual.
+
+   We will confirm the import of "Emily Boone".
+
+   In the import page, type **emily** in the search bar, select **Emimy Boone** then click on **Confirm Assignements**. 
+
+   Click on **Auto-activate users after confirmation** then on **Confirm**
+
+   The user Emily has been imported into Okta, you can check it in **Directory** > **People**.
+
+   ![alt_text](https://raw.githubusercontent.com/NicolasMiramon/LabGuide/main/images/010/image24.png "image_tooltip")
+
+   ![alt_text](https://raw.githubusercontent.com/NicolasMiramon/LabGuide/main/images/010/image25.png "image_tooltip")
+
+
+
