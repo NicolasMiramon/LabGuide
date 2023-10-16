@@ -114,7 +114,7 @@ String.len(String.removeSpaces(appuser.lastName)) > 0 ? appuser.lastName : "L_" 
     ![alt_text](https://raw.githubusercontent.com/NicolasMiramon/LabGuide/main/images/010/image30.png "image_tooltip")
 
 
-11.     You are now ready to import the users from SAP to Okta. The import can be scheduled automatically, however we prefer to do it manually in this lab in order to see this step. Go to your application, click on the **Import** tab, click on **Import Now**, select **Full import** then click on **Import**. This step will take around 5min as the connector will have to import around 1300 users the first time, it will be so much quicker afterwards.
+11. You are now ready to import the users from SAP to Okta. The import can be scheduled automatically, however we prefer to do it manually in this lab in order to see this step. Go to your application, click on the **Import** tab, click on **Import Now**, select **Full import** then click on **Import**. This step will take around 5min as the connector will have to import around 1300 users the first time, it will be so much quicker afterwards.
 
    ![alt_text](https://raw.githubusercontent.com/NicolasMiramon/LabGuide/main/images/010/image18.png "image_tooltip")
 
