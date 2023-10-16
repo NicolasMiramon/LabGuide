@@ -91,7 +91,7 @@ String.len(String.removeSpaces(appuser.lastName)) > 0 ? appuser.lastName : "L_" 
    - Click on the app **SuccessFactors**
    - Click on **Add Attribute**, search for **manager_id**, select the **ST1** attribute and click on **Save**
    ![alt_text](https://raw.githubusercontent.com/NicolasMiramon/LabGuide/main/images/010/image20.png "image_tooltip")
-   - Search for **manager** and add the 2 attributes **Manager Person First Name** and **Manager Person last Name**. Pay attention to add the **ST1** attributes as there are different categories in SAP.
+   - Search for **manager** and add the 2 attributes **Manager Person First Name** and **Manager Person last Name**. Ensure to add the **ST1** attributes as there are different categories in SAP.
    ![alt_text](https://raw.githubusercontent.com/NicolasMiramon/LabGuide/main/images/010/image27.png "image_tooltip")
    - Go back to **Profile Editor**, click on **Mappings** next to the app **SuccessFactors**
    - In the tab **SuccessFactors to Okta User**, scroll down until you see the attribute **managerId**, search for manager in the text box, select the attribute you have added earlier
@@ -108,7 +108,7 @@ String.len(String.removeSpaces(appuser.lastName)) > 0 ? appuser.lastName : "L_" 
 
    ![alt_text](https://raw.githubusercontent.com/NicolasMiramon/LabGuide/main/images/010/image18.png "image_tooltip")
 
-   ![alt_text](https://raw.githubusercontent.com/NicolasMiramon/LabGuide/main/images/010/image19.png "image_tooltip")
+   ![alt_text](https://raw.githubusercontent.com/NicolasMiramon/LabGuide/main/images/010/image19.png "image_tooltip") 
 
 12.  Users have been imported into Okta but not confirmed yet, this is an extra step that can be skipped if needed. For the purpose of this lab, we kept it manual.
 
