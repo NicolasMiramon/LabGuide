@@ -40,5 +40,9 @@ At the end of the lab, the accounts will be automatically decommissioned. Only t
 
 **To ensure that the lab works properly and to access to Okta tenant, you will need to install Okta Verify on one of your devices.**
 
+## Your domain
 
+A custom domain in O365 is assigned automatically to each user in this lab. This custom domain is a pre-requisite to go through the different integrations afterwards. To get this custom domain, go to section 3 - O365, then click on the button **Launch** in the top left corner under **Office365**. You will be redirected then to the admin console of O365, grab the first first part after **labadmin@** then copy it but without the word **my**. In the example below, your custom domain is **wiclab56**.
+
+![alt_text](https://raw.githubusercontent.com/NicolasMiramon/LabGuide/main/images/009/image047.png "image_tooltip")
 
