@@ -106,9 +106,8 @@ String.len(String.removeSpaces(appuser.lastName)) > 0 ? appuser.lastName : "L_" 
    ![alt_text](https://raw.githubusercontent.com/NicolasMiramon/LabGuide/main/images/010/image22.png "image_tooltip")
    - Now search for the attribute **manager** in the righ column and use the below expression language to build the display name of the manager as we don't have this attribute in SAP then click on **Save** and on **Apply updates now**
    ![alt_text](https://raw.githubusercontent.com/NicolasMiramon/LabGuide/main/images/010/image28.png "image_tooltip")
-   ```
-   String.append(String.append(appuser.person___employment_information_ST1___job_information___manager_person_first_name," "),appuser.person___employment_information_ST1___job_information___manager_person_last_name)
-   ```
+   
+   > String.append(String.append(appuser.person___employment_information_ST1___job_information___manager_person_first_name," "),appuser.person___employment_information_ST1___job_information___manager_person_last_name)
 
 10.  In the same mapping page, we'll map the secondary email to your personal email. This step is important, because when the user is imported from SAP SuccessFactors into Okta, as he has no password defined, he will receive an activation email to his secondary email in order to activate his account.
     ![alt_text](https://raw.githubusercontent.com/NicolasMiramon/LabGuide/main/images/010/image30.png "image_tooltip")
