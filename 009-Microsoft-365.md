@@ -127,7 +127,7 @@ Okta maintains a specific integration for Microsoft Office 365 in the Okta Integ
 > **String.substringBefore(user.login,\"@\") + \"@yourdemodomain.com\"**
 
 ![alt_text](https://raw.githubusercontent.com/NicolasMiramon/LabGuide/main/images/009/image08.png "image_tooltip")
-15. Click **Done**.
+16. Click **Done**.
 
 Your Okta org and your Microsoft 365 tenant are now configured for
 single sign-on from Okta to Azure AD.
