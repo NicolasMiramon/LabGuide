@@ -168,7 +168,7 @@ the steps below to grant this access and enable integration:
 
 4.  Click the **Authenticate with Microsoft Office 365** button.
 
-5.  Authenticate as the administrative user for your Microsoft tenant.\
+5.  Authenticate as the administrative user for your Microsoft tenant.
 
 ![alt_text](https://raw.githubusercontent.com/NicolasMiramon/LabGuide/main/images/009/image011.png "image_tooltip")
 
