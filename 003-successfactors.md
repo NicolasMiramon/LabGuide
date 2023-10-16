@@ -120,14 +120,15 @@ String.len(String.removeSpaces(appuser.lastName)) > 0 ? appuser.lastName : "L_" 
 
    ![alt_text](https://raw.githubusercontent.com/NicolasMiramon/LabGuide/main/images/010/image19.png "image_tooltip") 
 
-12.    Users have been imported into Okta but not confirmed yet, this is an extra step that can be skipped if needed. For the purpose of this lab, we kept it manual.
+
+12. Users have been imported into Okta but not confirmed yet, this is an extra step that can be skipped if needed. For the purpose of this lab, we kept it manual.
 
    We will confirm the import of **Emily Boone**.
 
    In the import page, type **emily** in the search bar, select **Emily Boone** then click on **Confirm Assignments**. 
-
+   
    Click on **Auto-activate users after confirmation** then on **Confirm**
-
+   
    The user Emily has been imported into Okta.
    Do the same thing for user **Wes Chang** who is the manager of Emily
 
