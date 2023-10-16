@@ -129,7 +129,7 @@ Okta maintains a specific integration for Microsoft Office 365 in the Okta Integ
 ![alt_text](https://raw.githubusercontent.com/NicolasMiramon/LabGuide/main/images/009/image08.png "image_tooltip")
 15. Click **Done**.
 
-Your Okta org, and your Microsoft 365 tenant, are now configured for
+Your Okta org and your Microsoft 365 tenant are now configured for
 single sign-on from Okta to Azure AD.
 
 > Note: You can't test single sign-on until you have enabled provisioning
