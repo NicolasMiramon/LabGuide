@@ -65,7 +65,7 @@ Import Groups                            checked
 
 8. Go to **Provisioning** > **To Okta**, click **Edit** next to the **General** section, choose **custom** from **Okta username format** then enter the following expression and click on **Save**:
    
-   >  String.substringBefore(user.login,"@") + "@myofficedomain.onmicrosoft.com"
+   >  String.substringBefore(appuser.email,"@") + "@myofficedomain.onmicrosoft.com"
 
    Please ensure to use your Office domain.
 
