@@ -172,7 +172,7 @@ the steps below to grant this access and enable integration:
 
 ![alt_text](https://raw.githubusercontent.com/NicolasMiramon/LabGuide/main/images/009/image011.png "image_tooltip")
 
-6.  Click **Accept** to allow your Okta org to manage users in your
+6.  Click **Accept** to allow your Okta org to manage users in your O365 tenant
 
 ![alt_text](https://raw.githubusercontent.com/NicolasMiramon/LabGuide/main/images/009/image012.png "image_tooltip")
 
