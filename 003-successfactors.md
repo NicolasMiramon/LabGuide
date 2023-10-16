@@ -31,11 +31,19 @@ Company ID = SFPART068962
 
 ```
 
-1. Select **SAML 2.0** then click **Done**.
+6. Select **SAML 2.0** then click **Done**.
 
    ![alt_text](https://raw.githubusercontent.com/NicolasMiramon/LabGuide/main/images/010/image09.png "image_tooltip")
 
-2. Now you need to configure the provisioning in order to push users from SAP to Okta.
+   In the same page, scroll down to the Credentials Details, click on **Custom** next to **Application username format**, then add the following username format:
+
+   Replace **myofficedomain** by your own O365 domain
+
+   >  String.substringBefore(user.login,"@") + "@myofficedomain.onmicrosoft.com"
+
+   ![alt_text](https://raw.githubusercontent.com/NicolasMiramon/LabGuide/main/images/010/image29.png "image_tooltip")
+
+7. Now you need to configure the provisioning in order to push users from SAP to Okta.
    
    Go to the **Provisioning** tab, click on **Configure API Integration**, click on **Enable API Integration**, enter the base URL, admin username and admin password (you can find them below) then click on **Test API Credentials**. If the test result is green, click on **Save**
    
@@ -63,8 +71,8 @@ Import Groups                            checked
 
 ```
 
-
-9.  You will now add some verifications on the first name and last name of the SAP user before importing it into Okta
+8.  **Optional**
+    You will now add some verifications on the first name and last name of the SAP user before importing it into Okta
     
     Go to **Provisioning** > **To Okta**, scroll down to the **Okta Attributes Mapping** section,  click on the pencil next to **First Name**, choose **Expression** from the attribute value then copy the expression language below and click on **Save**. Do the same thing for **Last Name**.
 
@@ -86,7 +94,7 @@ LastName:
 String.len(String.removeSpaces(appuser.lastName)) > 0 ? appuser.lastName : "L_" + appuser.userName
 ```
 
-10. **Optional step** The manager attribute is not mapped to an Okta attribute by default, here are the steps to configure it:
+9.   The manager attribute is not mapped to an Okta attribute by default, here are the steps to configure it:
    - In the left menu, go to **Directory** > **Profile Editor**
    - Click on the app **SuccessFactors**
    - Click on **Add Attribute**, search for **manager_id**, select the **ST1** attribute and click on **Save**
@@ -99,18 +107,20 @@ String.len(String.removeSpaces(appuser.lastName)) > 0 ? appuser.lastName : "L_" 
    - Now search for the attribute **manager** in the righ column and use the below expression language to build the display name of the manager as we don't have this attribute in SAP then click on **Save** and on **Apply updates now**
    ![alt_text](https://raw.githubusercontent.com/NicolasMiramon/LabGuide/main/images/010/image28.png "image_tooltip")
    ```
-   Expression Language for the manager attribute:
-
    String.append(String.append(appuser.person___employment_information_ST1___job_information___manager_person_first_name," "),appuser.person___employment_information_ST1___job_information___manager_person_last_name)
    ```
 
-11.   You are now ready to import the users from SAP to Okta. The import can be scheduled automatically, however we prefer to do it manually in this lab in order to see this step. Go to your application, click on the **Import** tab, click on **Import Now**, select **Full import** then click on **Import**. This step will take around 5min as the connector will have to import around 1300 users the first time, it will be so much quicker afterwards.
+10.  In the same mapping page, we'll map the secondary email to your personal email. This step is important, because when the user is imported from SAP SuccessFactors into Okta, as he has no password defined, he will receive an activation email to his secondary email in order to activate his account.
+    ![alt_text](https://raw.githubusercontent.com/NicolasMiramon/LabGuide/main/images/010/image30.png "image_tooltip")
+
+
+11.     You are now ready to import the users from SAP to Okta. The import can be scheduled automatically, however we prefer to do it manually in this lab in order to see this step. Go to your application, click on the **Import** tab, click on **Import Now**, select **Full import** then click on **Import**. This step will take around 5min as the connector will have to import around 1300 users the first time, it will be so much quicker afterwards.
 
    ![alt_text](https://raw.githubusercontent.com/NicolasMiramon/LabGuide/main/images/010/image18.png "image_tooltip")
 
    ![alt_text](https://raw.githubusercontent.com/NicolasMiramon/LabGuide/main/images/010/image19.png "image_tooltip") 
 
-12.  Users have been imported into Okta but not confirmed yet, this is an extra step that can be skipped if needed. For the purpose of this lab, we kept it manual.
+12.    Users have been imported into Okta but not confirmed yet, this is an extra step that can be skipped if needed. For the purpose of this lab, we kept it manual.
 
       We will confirm the import of **Emily Boone**.
 
