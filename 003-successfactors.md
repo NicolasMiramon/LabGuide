@@ -87,16 +87,18 @@ String.len(String.removeSpaces(appuser.lastName)) > 0 ? appuser.lastName : "L_" 
 ```
 
 10. **Optional step** The manager attribute is not mapped to an Okta attribute by default, here are the steps to configure it:
-   - in the left menu, go to **Directory** > **Profile Editor**
-   - click on the app **SuccessFactors**
-   - click on **Add Attribute**, search for **manager_id**, select the **ST1** attribute and click on **Save**
+   - In the left menu, go to **Directory** > **Profile Editor**
+   - Click on the app **SuccessFactors**
+   - Click on **Add Attribute**, search for **manager_id**, select the **ST1** attribute and click on **Save**
    ![alt_text](https://raw.githubusercontent.com/NicolasMiramon/LabGuide/main/images/010/image20.png "image_tooltip")
+   - Search for **manager** and add the 2 attributes ST1 **Manager Person First Name** and **Manager Person last Name**. Pay attention to add the **ST1** attributes as there are different categories in SAP.
+   ![alt_text](https://raw.githubusercontent.com/NicolasMiramon/LabGuide/main/images/010/image27.png "image_tooltip")
    - Go back to **Profile Editor**, click on **Mappings** next to the app **SuccessFactors**
-   - In the tab **SuccessFactors to Okta User**, scroll down until you see the attribute **managerId**, search for manager, select the attribute you have added earlier then click on **Save Mappings**
+   - In the tab **SuccessFactors to Okta User**, scroll down until you see the attribute **managerId**, search for manager, select the attribute you have added earlier then click on **Save** and on **Apply updates now**
    ![alt_text](https://raw.githubusercontent.com/NicolasMiramon/LabGuide/main/images/010/image22.png "image_tooltip")
    
 
-11.   You are now ready to import the users from SAP to Okta. The import can be scheduled automatically, however we prefer to do it manually in this lab in order to see this step. Go to the **Import** tab, click on **Import Now**, select **Full import** then click on **Import**. This step will take around 5min as the connector will have to import around 1300 users the first time, it will be so much quicker afterwards.
+11.   You are now ready to import the users from SAP to Okta. The import can be scheduled automatically, however we prefer to do it manually in this lab in order to see this step. Go to your application, click on the **Import** tab, click on **Import Now**, select **Full import** then click on **Import**. This step will take around 5min as the connector will have to import around 1300 users the first time, it will be so much quicker afterwards.
 
    ![alt_text](https://raw.githubusercontent.com/NicolasMiramon/LabGuide/main/images/010/image18.png "image_tooltip")
 
