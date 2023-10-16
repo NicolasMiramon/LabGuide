@@ -86,14 +86,14 @@ LastName:
 String.len(String.removeSpaces(appuser.lastName)) > 0 ? appuser.lastName : "L_" + appuser.userName
 ```
 
-10. **Optional** The manager attribute is not mapped to an Okta attribute by default, here are the steps to mapp it:
+10. **Optional step** The manager attribute is not mapped to an Okta attribute by default, here are the steps to configure it:
    - in the left menu, go to **Directory** > **Profile Editor**
    - click on the app **SuccessFactors**
    - click on **Add Attribute**, search for **manager_id**, select the **ST1** attribute and click on **Save**
-      ![alt_text](https://raw.githubusercontent.com/NicolasMiramon/LabGuide/main/images/010/image20.png "image_tooltip")
+   ![alt_text](https://raw.githubusercontent.com/NicolasMiramon/LabGuide/main/images/010/image20.png "image_tooltip")
    - Go back to **Profile Editor**, click on **Mappings** next to the app **SuccessFactors**
    - In the tab **SuccessFactors to Okta User**, scroll down until you see the attribute **managerId**, search for manager, select the attribute you have added earlier then click on **Save Mappings**
-      ![alt_text](https://raw.githubusercontent.com/NicolasMiramon/LabGuide/main/images/010/image22.png "image_tooltip")
+   ![alt_text](https://raw.githubusercontent.com/NicolasMiramon/LabGuide/main/images/010/image22.png "image_tooltip")
    
 
 11.   You are now ready to import the users from SAP to Okta. The import can be scheduled automatically, however we prefer to do it manually in this lab in order to see this step. Go to the **Import** tab, click on **Import Now**, select **Full import** then click on **Import**. This step will take around 5min as the connector will have to import around 1300 users the first time, it will be so much quicker afterwards.
@@ -106,7 +106,7 @@ String.len(String.removeSpaces(appuser.lastName)) > 0 ? appuser.lastName : "L_" 
 
       We will confirm the import of **Emily Boone**.
 
-      In the import page, type **emily** in the search bar, select **Emimy Boone** then click on **Confirm Assignements**. 
+      In the import page, type **emily** in the search bar, select **Emily Boone** then click on **Confirm Assignments**. 
 
       Click on **Auto-activate users after confirmation** then on **Confirm**
 
