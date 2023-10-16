@@ -91,12 +91,18 @@ String.len(String.removeSpaces(appuser.lastName)) > 0 ? appuser.lastName : "L_" 
    - Click on the app **SuccessFactors**
    - Click on **Add Attribute**, search for **manager_id**, select the **ST1** attribute and click on **Save**
    ![alt_text](https://raw.githubusercontent.com/NicolasMiramon/LabGuide/main/images/010/image20.png "image_tooltip")
-   - Search for **manager** and add the 2 attributes ST1 **Manager Person First Name** and **Manager Person last Name**. Pay attention to add the **ST1** attributes as there are different categories in SAP.
+   - Search for **manager** and add the 2 attributes **Manager Person First Name** and **Manager Person last Name**. Pay attention to add the **ST1** attributes as there are different categories in SAP.
    ![alt_text](https://raw.githubusercontent.com/NicolasMiramon/LabGuide/main/images/010/image27.png "image_tooltip")
    - Go back to **Profile Editor**, click on **Mappings** next to the app **SuccessFactors**
-   - In the tab **SuccessFactors to Okta User**, scroll down until you see the attribute **managerId**, search for manager, select the attribute you have added earlier then click on **Save** and on **Apply updates now**
+   - In the tab **SuccessFactors to Okta User**, scroll down until you see the attribute **managerId**, search for manager in the text box, select the attribute you have added earlier
    ![alt_text](https://raw.githubusercontent.com/NicolasMiramon/LabGuide/main/images/010/image22.png "image_tooltip")
-   
+   - Now search for the attribute **manager** in the righ column and use the below expression language to build the display name of the manager as we don't have this attribute in SAP then click on **Save** and on **Apply updates now**
+   ![alt_text](https://raw.githubusercontent.com/NicolasMiramon/LabGuide/main/images/010/image28.png "image_tooltip")
+   ```
+   Expression Language for the manager attribute:
+
+   String.append(String.append(appuser.person___employment_information_ST1___job_information___manager_person_first_name," "),appuser.person___employment_information_ST1___job_information___manager_person_last_name)
+   ```
 
 11.   You are now ready to import the users from SAP to Okta. The import can be scheduled automatically, however we prefer to do it manually in this lab in order to see this step. Go to your application, click on the **Import** tab, click on **Import Now**, select **Full import** then click on **Import**. This step will take around 5min as the connector will have to import around 1300 users the first time, it will be so much quicker afterwards.
 
