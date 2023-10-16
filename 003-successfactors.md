@@ -69,6 +69,8 @@ Import Groups                            checked
 
    Please ensure to use your Office domain.
 
+   ![alt_text](https://raw.githubusercontent.com/NicolasMiramon/LabGuide/main/images/009/image32.png "image_tooltip")
+
 9. Scroll down to **Profile & Lifecycle Sourcing**, click **Edit** then select the following then click **Save**:
     - Allow SuccessFactors to source Okta users
     - Reactivate suspended Okta users
