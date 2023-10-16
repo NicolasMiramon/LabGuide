@@ -3,13 +3,13 @@
 **Overview**
 
 This guide provides instructions for integrating Okta with SAP Success Factors so that the following use cases can be demonstrated:
-HRaaS - Sourcing a user profile from SAP Success Factors into Universal Directory.
+HRaaS - Sourcing a user profile from SAP Success Factors into Okta's Universal Directory.
 
 This lab uses a pre-built and managed instance of SAP Success Factors. The environment has users and groups defined in a pre-designed organisational structure. The integration uses an API connection to import users from SAP Success Factors into Okta’s Universal Directory.
 
 Okta maintains a specific integration for SAP Success Factors in the Okta Integration Network (OIN). To add this to your Okta org, follow these steps:
 
-1.  Open the admin console of your Okta demo org by clicking on the **Launch** button at the top left of this lab
+1.  Login to the admin console of your Okta demo org by clicking on the **Launch** button at the top left of this lab
 
 2.  Navigate to **Applications \> Applications** then click on **Browse App Catalog**
    
@@ -31,11 +31,11 @@ Company ID = SFPART068962
 
 ```
 
-7. Select **SAML 2.0** then click on **Done**.
+1. Select **SAML 2.0** then click **Done**.
 
    ![alt_text](https://raw.githubusercontent.com/NicolasMiramon/LabGuide/main/images/010/image09.png "image_tooltip")
 
-8. Now you need to configure the provisioning in order to push users from SAP to Okta.
+2. Now you need to configure the provisioning in order to push users from SAP to Okta.
    
    Go to the **Provisioning** tab, click on **Configure API Integration**, click on **Enable API Integration**, enter the base URL, admin username and admin password (you can find them below) then click on **Test API Credentials**. If the test result is green, click on **Save**
    
@@ -86,21 +86,34 @@ LastName:
 String.len(String.removeSpaces(appuser.lastName)) > 0 ? appuser.lastName : "L_" + appuser.userName
 ```
 
-10.   You are now ready to import the users from SAP to Okta. The import can be scheduled automatically, however we prefer to do it manually in this lab in order to see this step. Go to the **Import** tab, click on **Import Now**, select **Full import** then click on **Import**.
+10. **Optional step** The manager attribute is not mapped to an Okta attribute by default, here are the steps to configure it:
+   - In the left menu, go to **Directory** > **Profile Editor**
+   - Click on the app **SuccessFactors**
+   - Click on **Add Attribute**, search for **manager_id**, select the **ST1** attribute and click on **Save**
+   ![alt_text](https://raw.githubusercontent.com/NicolasMiramon/LabGuide/main/images/010/image20.png "image_tooltip")
+   - Search for **manager** and add the 2 attributes ST1 **Manager Person First Name** and **Manager Person last Name**. Pay attention to add the **ST1** attributes as there are different categories in SAP.
+   ![alt_text](https://raw.githubusercontent.com/NicolasMiramon/LabGuide/main/images/010/image27.png "image_tooltip")
+   - Go back to **Profile Editor**, click on **Mappings** next to the app **SuccessFactors**
+   - In the tab **SuccessFactors to Okta User**, scroll down until you see the attribute **managerId**, search for manager, select the attribute you have added earlier then click on **Save** and on **Apply updates now**
+   ![alt_text](https://raw.githubusercontent.com/NicolasMiramon/LabGuide/main/images/010/image22.png "image_tooltip")
+   
+
+11.   You are now ready to import the users from SAP to Okta. The import can be scheduled automatically, however we prefer to do it manually in this lab in order to see this step. Go to your application, click on the **Import** tab, click on **Import Now**, select **Full import** then click on **Import**. This step will take around 5min as the connector will have to import around 1300 users the first time, it will be so much quicker afterwards.
 
    ![alt_text](https://raw.githubusercontent.com/NicolasMiramon/LabGuide/main/images/010/image18.png "image_tooltip")
 
    ![alt_text](https://raw.githubusercontent.com/NicolasMiramon/LabGuide/main/images/010/image19.png "image_tooltip")
 
-11.  Users have been imported into Okta but not confirmed yet, this is an extra step that can be skipped if needed. For the purpose of this lab, we kept it manual.
+12.  Users have been imported into Okta but not confirmed yet, this is an extra step that can be skipped if needed. For the purpose of this lab, we kept it manual.
 
-   We will confirm the import of "Emily Boone".
+      We will confirm the import of **Emily Boone**.
 
-   In the import page, type **emily** in the search bar, select **Emimy Boone** then click on **Confirm Assignements**. 
+      In the import page, type **emily** in the search bar, select **Emily Boone** then click on **Confirm Assignments**. 
 
-   Click on **Auto-activate users after confirmation** then on **Confirm**
+      Click on **Auto-activate users after confirmation** then on **Confirm**
 
-   The user Emily has been imported into Okta.
+      The user Emily has been imported into Okta.
+      Do the same thing for user **Wes Chang** who is the manager of Emily
 
    ![alt_text](https://raw.githubusercontent.com/NicolasMiramon/LabGuide/main/images/010/image24.png "image_tooltip")
 
