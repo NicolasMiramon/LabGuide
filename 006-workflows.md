@@ -92,6 +92,7 @@ For the workflows in the Okta Workflow Pack to work you will need:
 
 1. An existing user (that will represent the manager user) in Okta and Office 365 **where the username in Okta and in O365 are the same (the user’s email address)**. 
 The manager user’s email address needs to point to a valid email address and have the appropriate Office 365 licenses so that the manager can get the email notifications as part of the flow.
+I this lab we will use the manager account **Wes Chang** imported from SAP SuccessFactor.
 
 2. An existing target user (that will represent the target user) in Okta where the **Okta Primary Email Address for that user is the same as the user’s Office 365 username**. The manager attribute in Okta Universal Directory will need to be the username of the Okta user that represents the manager and you created in the step above.
 **This target user must be assign to Office 365 application.**
@@ -151,11 +152,11 @@ https://raw.githubusercontent.com/NicolasMiramon/LabGuide/main/files/o365Onboard
 
 ## Testing the Okta Workflow Flow
 
-Create or import a new user with a manager assign (in our case Alex meyer) and assign Office 365 application.
+Create or import a new user with a manager assign (in our case Wes Chang) and assign Office 365 application.
 
-I our case we have created the user Elise Dupont in Okta.
+I our case we have created the user Elise Dupont in Okta and assign Wes Chang as manager from the user profil.
 
-![](https://raw.githubusercontent.com/NicolasMiramon/LabGuide/main/images/006-1/image26.png)
+![](https://raw.githubusercontent.com/NicolasMiramon/LabGuide/main/images/006-1/image33.png)
 
 You will be able to visualise the flow execution in real time by clicking on "Execution History" on the main flow.
 
