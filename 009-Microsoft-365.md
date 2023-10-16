@@ -249,25 +249,17 @@ Follow these steps:
 
 5.  Select the checkboxes for the following licenses:
 
-    -   Nucleus
-
-    -   Content_Explorer
-
-    -   Microsoft_Search
-
     -   Sharepoint Online (Plan 2)
 
     -   Office Online
 
     -   Office 365 ProPlus
 
+    -   Exchange Online (Plan 2)
+
     -   Exchange Online Advanced Threat Protection
 
     -   Microsoft Teams
-
-    -   Intune
-
-    -   Exchange Online (Plan 2)
 
 
 6.  Scroll to the bottom of the window and click on **Save**.
