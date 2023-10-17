@@ -126,9 +126,9 @@ https://raw.githubusercontent.com/NicolasMiramon/LabGuide/main/files/o365Onboard
 
 ![](https://raw.githubusercontent.com/NicolasMiramon/LabGuide/main/images/006-1/image10.png)
 
-6. Open the first flow \[MAIN FLOW\] New Hire Information by clicking on its name
+1. Open the first flow **MAIN FLOW** New Hire Information by clicking on its name
 
-7. Scroll to the right, you will see the card Send Email inside the If/Else Card, click on the Choose Connection
+2. Scroll to the right, you will see the card Send Email inside the If/Else Card, click on the Choose Connection
 
 ![](https://raw.githubusercontent.com/NicolasMiramon/LabGuide/main/images/006-1/image9.png)
 
@@ -142,7 +142,7 @@ https://raw.githubusercontent.com/NicolasMiramon/LabGuide/main/files/o365Onboard
 
 10. If you have not already done so, authorize the connections to Azure Active Directory, Microsoft Team, Office 365 Mail, Office 365 Calendar and Okta.
 
-11. **Make sure that the following Okta Workflow cards have valid connections assigned: open all the flows and verify that all the connections are correctly setup**
+11. **Make sure that the following Okta Workflow cards have valid connections assigned: open ALL THE FLOWS and verify that all the connections are correctly setup**
 
 ![](https://raw.githubusercontent.com/NicolasMiramon/LabGuide/main/images/006-1/image25.png)
 
@@ -152,11 +152,14 @@ https://raw.githubusercontent.com/NicolasMiramon/LabGuide/main/files/o365Onboard
 
 ## Testing the Okta Workflow Flow
 
-Create or import a new user with a manager assign (in our case Wes Chang) and assign Office 365 application.
+Create or import a new user with a manager assign (in our case **Wes Chang**) and assign Office 365 application.
 
-I our case we have created the user Elise Dupont in Okta and assign Wes Chang as manager from the user profil.
+In the example below, we have created the user **Elise Dupont** in Okta and assign **Wes Chang** as manager from the user profile.
 
 ![](https://raw.githubusercontent.com/NicolasMiramon/LabGuide/main/images/006-1/image33.png)
+
+In order to put the manager, go to **Profile**, click **Edit** then scroll down to the manager ID attribute and enter the value **wes.chang@wiclab56.onmicrosoft.com**, enter **Sales** in the **Department** attribute.
+![](https://raw.githubusercontent.com/NicolasMiramon/LabGuide/main/images/006-1/image34.png)
 
 You will be able to visualise the flow execution in real time by clicking on "Execution History" on the main flow.
 
@@ -164,7 +167,7 @@ You will be able to visualise the flow execution in real time by clicking on "Ex
 
 ### Resultat expected 
 
-On the manager profil (Alex Meyer) you will see : 
+On the manager profil (**Wes Chang**) you will see : 
 
 - A new email auto generated
 
